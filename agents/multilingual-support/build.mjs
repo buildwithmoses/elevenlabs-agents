@@ -37,8 +37,9 @@ export const TOOL_DEFS = [
     { language: { type: 'string', enum: ['en', 'es', 'vi'], description: "The caller's language." },
       reason: { type: 'string', enum: ['billing_dispute', 'not_in_knowledge_base', 'caller_upset', 'caller_requested_person', 'identity_failed', 'clinical_question', 'other'], description: 'Why a person is needed.' },
       summary: { type: 'string', description: 'One sentence in English for the staff member, listing every question the caller asked.' },
+      questions: { type: 'array', items: { type: 'string', description: 'One question or request, in English.' }, description: 'Every separate question or request the caller made, one per item, in English. Include every one, even ones you could not answer.' },
       callback_phone: { type: 'string', description: 'The number staff should call back, 10 digits, as the caller confirmed it. Ask for it before calling this tool.' },
-      conversation_id: cid }, ['language', 'reason', 'summary', 'callback_phone', 'conversation_id']),
+      conversation_id: cid }, ['language', 'reason', 'summary', 'questions', 'callback_phone', 'conversation_id']),
 ].map((t) => ({ ...t, api_schema: { ...t.api_schema, content_type: 'application/json', request_headers: { ...t.api_schema.request_headers, ...skipNgrok } } }));
 
 const FIRST = {
@@ -63,7 +64,7 @@ export function buildAgent({ variant = 'baseline', kbDocs = [], toolIds = [] } =
     conversation_config: {
       agent: {
         first_message: FIRST.en, language: 'en',
-        prompt: { prompt, llm: 'claude-haiku-5-5', temperature: 0.2, max_tokens: -1, timezone: 'America/Chicago', ignore_default_personality: true,
+        prompt: { prompt, llm: process.env.ML_LLM ?? 'claude-sonnet-5-5', temperature: 0.2, max_tokens: -1, timezone: 'America/Chicago', ignore_default_personality: true,
           tool_ids: toolIds, knowledge_base: kbDocs.map((d) => ({ type: 'text', name: d.name, id: d.id, usage_mode: 'prompt' })),
           rag: { enabled: false }, built_in_tools: builtIn },
       },

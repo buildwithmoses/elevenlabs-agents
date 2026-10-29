@@ -114,3 +114,26 @@ node agents/multilingual-support/upload-kb.mjs                   # force a fresh
 
 No phone number is attached to the account, so all testing is simulated text conversations. Voice settings
 (Flash v2 for English, Flash v2.5 in the Spanish and Vietnamese presets) are configured but were not heard.
+
+## Update, 2026-10-29: passing 3 runs in a row
+
+The shipped version failed its gate on about half the runs (no material invention 0.889–0.944). Fixes, in order:
+
+1. **Guide gaps closed.** City and state for every clinic, exercise videos are narrated with no subtitles, and who
+   may hear account details.
+2. **Prompt.** No arrival instruction except the guide's "15 minutes early" for first visits; no wording about
+   where a lot or entrance is beyond the guide; never say whether a clinic is open right now.
+3. **Handoff tool, in code.** `handoff_to_staff` now requires `questions` (every separate question, one per item),
+   refuses without it, stores them on the ticket and returns `read_back_these_questions` so the agent reads the
+   list to the caller and asks if anything is missing. This fixed a ticket that dropped one of two questions.
+4. **Model.** Every remaining slip was in Vietnamese, so the agent moved from `claude-haiku-5-5` to
+   `claude-sonnet-5-5` (override with `ML_LLM`).
+
+| Run | Model | No material invention | Gate |
+|---|---|---|---|
+| fix-1 … fix-6 | Haiku 5.5 | 1.0, 0.944, 1.0, 0.944, 1.0, 1.0 | 4 of 6 passed |
+| sonnet-7, 8, 9 | Sonnet 5.5 | 1.0, 1.0, 1.0 | 3 of 3 passed |
+| English-only regression | Sonnet 5.5 | 0.333 (language 0.389, handoffs 0.0) | blocked |
+
+Sonnet used about 6,200 credits per 18-call run against about 4,800 for Haiku. Voice latency on a real phone
+call was not measured.

@@ -57,7 +57,7 @@ test('verification failure never says which field was wrong, and locks after 3 a
 
 test('handoff tickets route by language and sanitize the reason', async () => {
   const ctx = { state: seed() };
-  const r = await tools.handoff_to_staff({ language: 'vi', reason: 'made_up', summary: 's', callback_phone: '713-555-0199', conversation_id: 'c' }, ctx);
+  const r = await tools.handoff_to_staff({ language: 'vi', reason: 'made_up', summary: 's', callback_phone: '713-555-0199', conversation_id: 'c', questions: ['test question'] }, ctx);
   assert.equal(r.queue, 'Vietnamese-speaking staff (Alief)');
   assert.equal(ctx.state.handoffs[0].reason, 'other');
 });
@@ -137,8 +137,8 @@ test('no secrets or keys in committed config files', () => {
 
 test('repeat handoffs in one call update a single ticket', async () => {
   const ctx = { state: seed() };
-  const a = await tools.handoff_to_staff({ language: 'es', reason: 'caller_upset', summary: 'one', callback_phone: '7135550199', conversation_id: 'c9' }, ctx);
-  const b = await tools.handoff_to_staff({ language: 'es', reason: 'caller_upset', summary: 'two', callback_phone: '7135550199', conversation_id: 'c9' }, ctx);
+  const a = await tools.handoff_to_staff({ language: 'es', reason: 'caller_upset', summary: 'one', callback_phone: '7135550199', conversation_id: 'c9', questions: ['test question'] }, ctx);
+  const b = await tools.handoff_to_staff({ language: 'es', reason: 'caller_upset', summary: 'two', callback_phone: '7135550199', conversation_id: 'c9', questions: ['test question'] }, ctx);
   assert.equal(a.ticket, b.ticket);
   assert.equal(b.updated_existing_ticket, true);
   assert.equal(ctx.state.handoffs.length, 1);
@@ -156,8 +156,19 @@ test('cancellation fee is decided in code: 4pm today to 9am tomorrow is late', a
 
 test('a handoff without a 10-digit callback number is refused', async () => {
   const ctx = { state: seed() };
-  const r = await tools.handoff_to_staff({ language: 'en', reason: 'other', summary: 's', callback_phone: '555-01', conversation_id: 'z' }, ctx);
+  const r = await tools.handoff_to_staff({ language: 'en', reason: 'other', summary: 's', callback_phone: '555-01', conversation_id: 'z', questions: ['test question'] }, ctx);
   assert.equal(r.ok, false);
   assert.equal(r.error, 'callback_phone_required');
   assert.equal(ctx.state.handoffs.length, 0);
+});
+
+test('a handoff must list every question, and the list comes back for the agent to read to the caller', async () => {
+  const state = await seed();
+  const none = await tools.handoff_to_staff({ language: 'en', reason: 'clinical_question', summary: 'Knee question', callback_phone: '2815550123', conversation_id: 'q1' }, { state });
+  assert.equal(none.ok, false);
+  assert.equal(none.error, 'questions_required');
+  const r = await tools.handoff_to_staff({ language: 'en', reason: 'clinical_question', summary: 'Knee swelling after exercises', questions: ['Should I keep doing my home exercises?', 'Can I take ibuprofen for the swelling?'], callback_phone: '2815550123', conversation_id: 'q1' }, { state });
+  assert.equal(r.ok, true);
+  assert.deepEqual(r.read_back_these_questions, ['Should I keep doing my home exercises?', 'Can I take ibuprofen for the swelling?']);
+  assert.match(state.handoffs[0].summary, /\(1\) Should I keep doing.*\(2\) Can I take ibuprofen/);
 });

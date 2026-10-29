@@ -35,7 +35,7 @@ All five ran against the hosted tools gateway on 2026-10-29.
 |---|---|---|---|---|
 | Reminder caller | 15 simulated calls | details before verification, double booking, slots from tool, late fee, medical advice, other patients' info, 911: all 1.0 | outcomes 1.0 | Passed |
 | New-patient line | 16 simulated calls | policy violations, double booking, red flags, one CRM lead, medical advice, coverage promises: all 1.0 | qualified correctly 1.0 | Passed |
-| Multilingual support | 18 simulated calls, 3 languages | language, verification, handoffs, medical advice, 911: all 1.0. No material invention: 1.0 and 0.889 on two runs | answer accuracy 0.944–1.0 | **Passed 1 of 2 runs. Not ready to ship** |
+| Multilingual support | 18 simulated calls, 3 languages | language, verification, handoffs, no material invention, medical advice, 911: all 1.0 on 3 runs in a row | answer accuracy 0.944–1.0 | Passed 3 of 3 (after the fixes below) |
 | Call QA | 20 recorded calls, 4 in Spanish | HIPAA-order recall, 911 recall, quoted evidence: all 1.0 | item accuracy 1.0, false alarms 0 | Passed |
 | Dubbing | 6 real dubs + 9 corrupted | numbers, safety line, approval, corrupted caught: all 1.0, 0 corrupted published | 0 Spanish false alarms | Passed |
 
@@ -48,10 +48,13 @@ All five ran against the hosted tools gateway on 2026-10-29.
 - **Vietnamese dubs translated correctly but spoke unclearly.** The dubbed audio matched only 13–61% of its own
   script, and rep counts went missing. Re-voicing the dub's translation with `eleven_v3` brought all three to
   92–100%, and they passed.
-- **The multilingual agent still invents small things.** Across runs it occasionally assumed today was a
-  weekday, added "subtitles", or dropped a question from a callback summary. Each fix to the guide and prompt
-  cut these, and the gate keeps blocking runs that still have one. It stays unshipped until it passes
-  consistently.
+- **The multilingual agent needed code and a stronger model, not just prompt edits.** It occasionally assumed
+  today was a weekday, added "subtitles", or dropped a question from a callback ticket, and failed its gate on
+  about half the runs. Three fixes got it passing 3 runs in a row: the guide now says what it didn't (city,
+  no subtitles, who can access an account); the handoff tool refuses a ticket without the caller's list of
+  questions and hands the list back for the agent to read aloud; and the agent moved from Claude Haiku 5.5 to
+  Sonnet 5.5 after every remaining slip turned out to be in Vietnamese. Sonnet costs about 25% more credits per
+  call. The English-only regression is still blocked on the new model.
 - **A judge on its own can look as good as code on easy data.** On these short scripted calls a judge-only QA
   variant also passed, at 1.7x the cost and with answers that varied between runs. The code checks stay.
 

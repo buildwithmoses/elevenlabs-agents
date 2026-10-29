@@ -10,6 +10,8 @@ Texas area. This guide is the only source the patient support line may answer fr
 - Katy: 23510 Kingsland Boulevard, Suite 140. Free surface lot.
 - Alief: 11800 Bellaire Boulevard, Suite 15. Free lot shared with the shopping center. Vietnamese-speaking front desk on weekdays.
 - Spring: 6920 Louetta Road. Free surface lot.
+All six clinics are in the Houston, Texas area: Heights and Alief are in Houston, and Bellaire, Pasadena,
+Katy and Spring are their own Texas cities next to Houston (Pasadena, Texas; not California).
 All clinics are wheelchair accessible.
 
 ## Phone numbers
