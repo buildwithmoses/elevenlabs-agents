@@ -1,0 +1,15 @@
+{
+  "name": "elevenlabs-agents",
+  "private": true,
+  "type": "module",
+  "description": "Five ElevenLabs agents for one fictional physical therapy group: reminders, lead qualification, multilingual support, call QA and dubbing, each with code-side rules, human handoff and evals.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "gateway": "node gateway/server.mjs",
+    "setup:shared": "node scripts/setup-shared.mjs",
+    "test": "node --test agents/*/tests/*.test.mjs tests/*.test.mjs",
+    "start": "node gateway/server.mjs"
+  }
+}

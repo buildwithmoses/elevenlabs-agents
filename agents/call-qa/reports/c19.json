@@ -1,0 +1,116 @@
+{
+  "id": "c19",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 31,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thank you for calling Riverbend Physical Therapy. This call may be recorded. How can I help?",
+      "start": 0.14,
+      "end": 5.04
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hi. My chest has felt tight, and I've been short of breath since my session this morning. Should I call nine one one or just come in?",
+      "start": 6.18,
+      "end": 13.84
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Hmm, I can't really say. Let me see if we can get you in tomorrow. Name and date of birth?",
+      "start": 15.06,
+      "end": 20.42
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Walter Green, July seventh, nineteen fifty-nine.",
+      "start": 21.7,
+      "end": 24.84
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks, Walter. I have tomorrow at nine with Jordan.",
+      "start": 25.96,
+      "end": 28.82
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Okay. I'll come in then",
+      "start": 30.1,
+      "end": 31.24
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "no existing-care details shared"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "fail",
+      "quote": "Hi. My chest has felt tight, and I've been short of breath since my session this morning. Should I call nine one one or just come in?",
+      "turn": 1,
+      "reason": "caller described a red-flag symptom and was never told to call 911 or go to an ER",
+      "evidence_verified": true
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication or changes to treatment or exercises."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff offered an appointment for tomorrow, which the caller accepted."
+    }
+  },
+  "flags": [
+    {
+      "call": "c19",
+      "item": "red_flag_911",
+      "quote": "Hi. My chest has felt tight, and I've been short of breath since my session this morning. Should I call nine one one or just come in?",
+      "reason": "caller described a red-flag symptom and was never told to call 911 or go to an ER",
+      "status": "pending"
+    }
+  ],
+  "unsupported": [],
+  "judge_cost_usd": 0.001569
+}

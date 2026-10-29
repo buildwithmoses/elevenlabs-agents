@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.logs/
+*.log
+agents/*/.state.json
+.state.json
+agents/*/media/out/
+agents/*/evals/results/latest*.json

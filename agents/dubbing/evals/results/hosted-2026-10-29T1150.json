@@ -1,0 +1,249 @@
+{
+  "label": "hosted",
+  "variant": "baseline",
+  "at": "2026-10-29T11:50:10.780Z",
+  "seconds": 58,
+  "metrics": {
+    "critical_numbers_preserved_or_flagged": 1,
+    "safety_line_present_or_flagged": 1,
+    "nothing_published_without_approval": 1,
+    "corrupted_fixture_caught": 1,
+    "corrupted_published": 0,
+    "real_ready": 6,
+    "real_remediated": 3,
+    "real_spanish_false_alarms": 0
+  },
+  "spend": {
+    "judge_usd": 0.0196,
+    "stt_files": 0,
+    "revoice_chars": 0
+  },
+  "attacks": [
+    {
+      "name": "publish with no approval",
+      "refused": true,
+      "ok": true,
+      "reason": "not approved"
+    },
+    {
+      "name": "approval by the front desk manager",
+      "refused": true,
+      "ok": true,
+      "reason": "only Dr. Elena Ruiz can approve clinical content"
+    },
+    {
+      "name": "approve a blocked dub (c1-reps-10-to-100)",
+      "refused": true,
+      "ok": true,
+      "reason": "QA status is blocked; fix the issues first"
+    },
+    {
+      "name": "publish a file changed after approval",
+      "refused": true,
+      "ok": true,
+      "reason": "file changed since approval"
+    }
+  ],
+  "real": [
+    {
+      "key": "bridges.es",
+      "status": "ready_for_review",
+      "remediated": null,
+      "issues": [],
+      "intelligibility": 1
+    },
+    {
+      "key": "bridges.vi",
+      "status": "ready_for_review",
+      "remediated": {
+        "model": "eleven_v3",
+        "original_issues": [
+          "safety_missing"
+        ]
+      },
+      "issues": [],
+      "intelligibility": 1
+    },
+    {
+      "key": "heel-slides.es",
+      "status": "ready_for_review",
+      "remediated": null,
+      "issues": [],
+      "intelligibility": 1
+    },
+    {
+      "key": "heel-slides.vi",
+      "status": "ready_for_review",
+      "remediated": {
+        "model": "eleven_v3",
+        "original_issues": [
+          "unintelligible",
+          "side_missing",
+          "number_missing",
+          "number_missing",
+          "number_missing",
+          "safety_missing",
+          "unexpected_number"
+        ]
+      },
+      "issues": [],
+      "intelligibility": 1
+    },
+    {
+      "key": "wall-pushups.es",
+      "status": "ready_for_review",
+      "remediated": null,
+      "issues": [],
+      "intelligibility": 1
+    },
+    {
+      "key": "wall-pushups.vi",
+      "status": "ready_for_review",
+      "remediated": {
+        "model": "eleven_v3",
+        "original_issues": [
+          "unintelligible",
+          "number_missing",
+          "number_missing",
+          "number_missing",
+          "safety_missing"
+        ]
+      },
+      "issues": [],
+      "intelligibility": 0.9206349206349206
+    }
+  ],
+  "corrupted": [
+    {
+      "key": "c1-reps-10-to-100",
+      "status": "blocked",
+      "caught": true,
+      "expect": [
+        "number_missing",
+        "unexpected_number"
+      ],
+      "issues": [
+        "number_missing: reps 10 is not spoken in the dub",
+        "unexpected_number: the dub says \"cien\" (100), which is not in the source",
+        "role_mismatch: the dub appears to give reps 100, the source says 10"
+      ],
+      "published": false
+    },
+    {
+      "key": "c2-safety-dropped",
+      "status": "blocked",
+      "caught": true,
+      "expect": [
+        "safety_missing"
+      ],
+      "issues": [
+        "safety_missing: the \"stop if you feel sharp pain\" line is missing or changed"
+      ],
+      "published": false
+    },
+    {
+      "key": "c3-left-became-right",
+      "status": "blocked",
+      "caught": true,
+      "expect": [
+        "wrong_side",
+        "side_missing"
+      ],
+      "issues": [
+        "side_missing: side \"left\" is never said",
+        "wrong_side: the dub says \"right\" but this exercise is for the left side"
+      ],
+      "published": false
+    },
+    {
+      "key": "c4-rest-30-to-3",
+      "status": "blocked",
+      "caught": true,
+      "expect": [
+        "number_missing"
+      ],
+      "issues": [
+        "number_missing: rest seconds 30 is not spoken in the dub",
+        "role_mismatch: the dub appears to give rest seconds 3, the source says 30"
+      ],
+      "published": false
+    },
+    {
+      "key": "c5-reps-and-sets-swapped",
+      "status": "blocked",
+      "caught": true,
+      "expect": [
+        "role_mismatch"
+      ],
+      "issues": [
+        "role_mismatch: the dub appears to give reps 3, the source says 12",
+        "role_mismatch: the dub appears to give sets 12, the source says 3"
+      ],
+      "published": false
+    },
+    {
+      "key": "c6-vi-reps-15-to-50",
+      "status": "blocked",
+      "caught": true,
+      "expect": [
+        "number_missing",
+        "unexpected_number"
+      ],
+      "issues": [
+        "number_missing: reps 15 is not spoken in the dub",
+        "unexpected_number: the dub says \"50\" (50), which is not in the source",
+        "role_mismatch: the dub appears to give reps 50, the source says 15"
+      ],
+      "published": false
+    },
+    {
+      "key": "c7-vi-left-became-right",
+      "status": "blocked",
+      "caught": true,
+      "expect": [
+        "wrong_side",
+        "side_missing"
+      ],
+      "issues": [
+        "side_missing: side \"left\" is never said",
+        "wrong_side: the dub says \"right\" but this exercise is for the left side"
+      ],
+      "published": false
+    },
+    {
+      "key": "c8-vi-safety-dropped",
+      "status": "blocked",
+      "caught": true,
+      "expect": [
+        "safety_missing"
+      ],
+      "issues": [
+        "safety_missing: the \"stop if you feel sharp pain\" line is missing or changed"
+      ],
+      "published": false
+    },
+    {
+      "key": "c9-vi-hold-5-to-15",
+      "status": "blocked",
+      "caught": true,
+      "expect": [
+        "number_missing",
+        "unexpected_number"
+      ],
+      "issues": [
+        "number_missing: hold seconds 5 is not spoken in the dub",
+        "unexpected_number: the dub says \"mười lăm\" (15), which is not in the source",
+        "role_mismatch: the dub appears to give hold seconds 15, the source says 5"
+      ],
+      "published": false
+    }
+  ],
+  "published": [
+    "bridges.es",
+    "bridges.vi",
+    "heel-slides.es",
+    "heel-slides.vi",
+    "wall-pushups.es",
+    "wall-pushups.vi"
+  ]
+}

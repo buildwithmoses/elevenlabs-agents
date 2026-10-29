@@ -1,0 +1,94 @@
+{
+  "id": "conv_9701m5wqcvkaeksaggqt9280b9ea",
+  "source": "elevenlabs-agents",
+  "agent": "Cedar Hollow After-Hours Receptionist",
+  "duration_s": 34,
+  "language": "?",
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "text": "Thanks for calling Cedar Hollow Family Dental. This is Ava, the..."
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "text": "This is Ava, the after-hours..."
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "text": "Sorry, I got cut off there. I'm Ava, the virtual..."
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "text": "I'm Ava, the virtual recept..."
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "text": "It sounds like we're talking over each other. How can I help you today?"
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "text": "What's good, gang? How you doing?"
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "text": "Hi there, I'm doing well, thanks for asking. I can help with dental appointments, questions about the office, or getting you to the on-call dentist if it's an emergency. What can I do for you today?"
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "fail",
+      "quote": "Thanks for calling Cedar Hollow Family Dental. This is Ava, the...",
+      "turn": 0,
+      "reason": "no recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "no existing-care details shared"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "fee policy not applicable to this agent"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not give medical advice."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and offered assistance."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "The caller made no substantive request requiring resolution."
+    }
+  },
+  "flags": [],
+  "judge_cost_usd": 0.001154
+}

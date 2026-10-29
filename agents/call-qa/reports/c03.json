@@ -1,0 +1,131 @@
+{
+  "id": "c03",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 36,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks for calling Riverbend Physical Therapy. This call may be recorded for quality. How can I help?",
+      "start": 0.08,
+      "end": 5.56
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "I need to move my appointment this week.",
+      "start": 6.56,
+      "end": 8.32
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Sure. Can I have your name and date of birth to pull up your chart?",
+      "start": 9.26,
+      "end": 12.58
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Tanya Brooks, October second, nineteen ninety-one.",
+      "start": 13.34,
+      "end": 16.48
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thank you, Tanya. I see you on Wednesday at four with Sam. When would work better?",
+      "start": 17.56,
+      "end": 22.06
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Is there anything Friday morning?",
+      "start": 23.14,
+      "end": 24.56
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Friday at eight thirty is open with Sam. Should I move you there?",
+      "start": 25.72,
+      "end": 28.8
+    },
+    {
+      "i": 7,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Yes, please.",
+      "start": 29.94,
+      "end": 30.56
+    },
+    {
+      "i": 8,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Done. You're now Friday at eight thirty. You'll get a text confirmation shortly.",
+      "start": 31.58,
+      "end": 36.1
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "date of birth verified before any existing-care details"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication or changes to treatment or exercises."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff moved the appointment to the requested Friday morning time."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.001055
+}

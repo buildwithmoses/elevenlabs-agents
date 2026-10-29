@@ -1,0 +1,325 @@
+{
+ "key": "wall-pushups.vi",
+ "lang": "vi",
+ "model": "scribe_v1",
+ "language_code": "vie",
+ "language_probability": 1,
+ "text": "Chồng trai vội thuồng. Dũng sạch thuồng khoang một sai tài. Giạt hài thai lên thuồng ở chỗ khào ngàng vai. Gặp khố yêu thai và juăng gụt ve phia thuồng, sao cho chải nguội ra. Thúc hiến đòa lên mỏi hiếp. Lắm tri hiếp vắng hít tris giai ghiu và kách hiếp. Dòng lái nêu băng cam thai chàu hòi ô vai.",
+ "words": [
+  {
+   "text": "Chồng",
+   "start": 0.3,
+   "end": 0.48
+  },
+  {
+   "text": "trai",
+   "start": 0.52,
+   "end": 0.68
+  },
+  {
+   "text": "vội",
+   "start": 0.76,
+   "end": 0.92
+  },
+  {
+   "text": "thuồng.",
+   "start": 0.98,
+   "end": 1.3
+  },
+  {
+   "text": "Dũng",
+   "start": 1.88,
+   "end": 2.04
+  },
+  {
+   "text": "sạch",
+   "start": 2.14,
+   "end": 2.36
+  },
+  {
+   "text": "thuồng",
+   "start": 2.42,
+   "end": 2.64
+  },
+  {
+   "text": "khoang",
+   "start": 2.72,
+   "end": 3.04
+  },
+  {
+   "text": "một",
+   "start": 3.12,
+   "end": 3.26
+  },
+  {
+   "text": "sai",
+   "start": 3.32,
+   "end": 3.46
+  },
+  {
+   "text": "tài.",
+   "start": 3.54,
+   "end": 3.76
+  },
+  {
+   "text": "Giạt",
+   "start": 4.16,
+   "end": 4.34
+  },
+  {
+   "text": "hài",
+   "start": 4.4,
+   "end": 4.54
+  },
+  {
+   "text": "thai",
+   "start": 4.6,
+   "end": 4.8
+  },
+  {
+   "text": "lên",
+   "start": 4.86,
+   "end": 5.02
+  },
+  {
+   "text": "thuồng",
+   "start": 5.08,
+   "end": 5.3
+  },
+  {
+   "text": "ở",
+   "start": 5.42,
+   "end": 5.46
+  },
+  {
+   "text": "chỗ",
+   "start": 5.54,
+   "end": 5.7
+  },
+  {
+   "text": "khào",
+   "start": 5.74,
+   "end": 5.98
+  },
+  {
+   "text": "ngàng",
+   "start": 6.02,
+   "end": 6.2
+  },
+  {
+   "text": "vai.",
+   "start": 6.28,
+   "end": 6.54
+  },
+  {
+   "text": "Gặp",
+   "start": 6.98,
+   "end": 7.12
+  },
+  {
+   "text": "khố",
+   "start": 7.16,
+   "end": 7.32
+  },
+  {
+   "text": "yêu",
+   "start": 7.38,
+   "end": 7.5
+  },
+  {
+   "text": "thai",
+   "start": 7.54,
+   "end": 7.78
+  },
+  {
+   "text": "và",
+   "start": 7.84,
+   "end": 7.98
+  },
+  {
+   "text": "juăng",
+   "start": 8.08,
+   "end": 8.34
+  },
+  {
+   "text": "gụt",
+   "start": 8.38,
+   "end": 8.48
+  },
+  {
+   "text": "ve",
+   "start": 8.56,
+   "end": 8.68
+  },
+  {
+   "text": "phia",
+   "start": 8.7,
+   "end": 8.92
+  },
+  {
+   "text": "thuồng,",
+   "start": 8.98,
+   "end": 9.22
+  },
+  {
+   "text": "sao",
+   "start": 9.52,
+   "end": 9.68
+  },
+  {
+   "text": "cho",
+   "start": 9.74,
+   "end": 9.86
+  },
+  {
+   "text": "chải",
+   "start": 9.94,
+   "end": 10.14
+  },
+  {
+   "text": "nguội",
+   "start": 10.22,
+   "end": 10.46
+  },
+  {
+   "text": "ra.",
+   "start": 10.52,
+   "end": 10.72
+  },
+  {
+   "text": "Thúc",
+   "start": 11.14,
+   "end": 11.3
+  },
+  {
+   "text": "hiến",
+   "start": 11.34,
+   "end": 11.6
+  },
+  {
+   "text": "đòa",
+   "start": 11.68,
+   "end": 11.82
+  },
+  {
+   "text": "lên",
+   "start": 11.98,
+   "end": 12.14
+  },
+  {
+   "text": "mỏi",
+   "start": 12.18,
+   "end": 12.34
+  },
+  {
+   "text": "hiếp.",
+   "start": 12.42,
+   "end": 12.72
+  },
+  {
+   "text": "Lắm",
+   "start": 13.16,
+   "end": 13.34
+  },
+  {
+   "text": "tri",
+   "start": 13.44,
+   "end": 13.62
+  },
+  {
+   "text": "hiếp",
+   "start": 13.68,
+   "end": 13.92
+  },
+  {
+   "text": "vắng",
+   "start": 13.98,
+   "end": 14.16
+  },
+  {
+   "text": "hít",
+   "start": 14.22,
+   "end": 14.36
+  },
+  {
+   "text": "tris",
+   "start": 14.42,
+   "end": 14.66
+  },
+  {
+   "text": "giai",
+   "start": 14.72,
+   "end": 14.94
+  },
+  {
+   "text": "ghiu",
+   "start": 15,
+   "end": 15.16
+  },
+  {
+   "text": "và",
+   "start": 15.16,
+   "end": 15.26
+  },
+  {
+   "text": "kách",
+   "start": 15.32,
+   "end": 15.56
+  },
+  {
+   "text": "hiếp.",
+   "start": 15.6,
+   "end": 15.88
+  },
+  {
+   "text": "Dòng",
+   "start": 16.26,
+   "end": 16.4
+  },
+  {
+   "text": "lái",
+   "start": 16.46,
+   "end": 16.62
+  },
+  {
+   "text": "nêu",
+   "start": 16.7,
+   "end": 16.84
+  },
+  {
+   "text": "băng",
+   "start": 16.9,
+   "end": 17.04
+  },
+  {
+   "text": "cam",
+   "start": 17.08,
+   "end": 17.24
+  },
+  {
+   "text": "thai",
+   "start": 17.3,
+   "end": 17.46
+  },
+  {
+   "text": "chàu",
+   "start": 17.54,
+   "end": 17.74
+  },
+  {
+   "text": "hòi",
+   "start": 17.88,
+   "end": 18.06
+  },
+  {
+   "text": "ô",
+   "start": 18.14,
+   "end": 18.2
+  },
+  {
+   "text": "vai.",
+   "start": 18.26,
+   "end": 18.54
+  }
+ ]
+}

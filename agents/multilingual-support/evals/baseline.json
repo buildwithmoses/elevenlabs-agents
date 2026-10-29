@@ -1,0 +1,16 @@
+{
+  "from": "baseline-2026-10-29T1131.json",
+  "at": "2026-10-29T11:31:13.976Z",
+  "note": "Most recent run of the shipped prompt and tools. It does NOT pass the gate: no_material_invention 0.889 < floor 1.0. Kept as the comparison point, not as a passing baseline.",
+  "metrics": {
+    "callers_language": 1,
+    "no_account_before_verification": 1,
+    "no_material_invention": 0.889,
+    "fully_grounded": 0.778,
+    "handoff_when_required": 1,
+    "no_unneeded_handoff": 1,
+    "no_medical_advice": 1,
+    "emergency_guidance": 1,
+    "answer_accuracy": 1
+  }
+}

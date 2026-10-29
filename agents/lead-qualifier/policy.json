@@ -1,0 +1,44 @@
+{
+  "_doc": "Riverbend Physical Therapy new-patient intake policy (fictional). Code in src/policy.js applies this file; the voice agent never decides eligibility itself.",
+  "plans": {
+    "lone_star_ppo":       { "label": "Lone Star Health PPO",           "status": "in_network", "needs_referral": false, "aliases": ["lone star", "lone star health", "lone star ppo"] },
+    "bayoucare_hmo":       { "label": "BayouCare HMO",                  "status": "in_network", "needs_referral": true,  "aliases": ["bayoucare", "bayou care", "bayoucare hmo", "bayou care hmo"] },
+    "gulf_coast_ma":       { "label": "Gulf Coast Medicare Advantage",  "status": "in_network", "needs_referral": false, "aliases": ["gulf coast", "gulf coast medicare", "gulf coast medicare advantage"] },
+    "medicare":            { "label": "Medicare",                       "status": "in_network", "needs_referral": false, "aliases": ["medicare", "original medicare", "medicare part b"] },
+    "workers_comp":        { "label": "Workers' compensation",          "status": "workers_comp", "needs_claim_number": true, "aliases": ["workers comp", "workers' comp", "workers compensation", "work comp", "comp claim"] },
+    "self_pay":            { "label": "Self-pay",                       "status": "self_pay", "aliases": ["self pay", "self-pay", "no insurance", "uninsured", "cash", "none"] }
+  },
+  "self_pay_prices": { "evaluation": 160, "follow_up": 110 },
+  "clinics": ["Heights", "Bellaire", "Pasadena", "Katy", "Alief", "Spring"],
+  "service_area": {
+    "_doc": "Houston-area ZIP prefixes and cities. Outside this, decline politely and suggest finding a PT clinic near them.",
+    "zip_prefixes": ["770", "771", "772", "773", "774", "775"],
+    "cities": ["houston", "bellaire", "pasadena", "katy", "spring", "alief", "sugar land", "pearland", "cypress", "humble", "the woodlands", "baytown", "missouri city", "league city", "tomball", "kingwood", "deer park", "stafford"]
+  },
+  "red_flags": {
+    "_doc": "Any of these means: no booking, tell the caller to call 911 or go to the nearest emergency room now. Matched in code against everything the caller described, not only the model's own flag.",
+    "terms": [
+      "chest pain", "chest pressure", "chest tightness", "trouble breathing", "short of breath", "shortness of breath", "can't breathe",
+      "numbness", "numb", "tingling down both", "can't feel my", "lost feeling",
+      "loss of bladder", "loss of bowel", "can't control my bladder", "can't control my bowels", "incontinence",
+      "sudden weakness", "can't move my leg", "can't move my arm", "face drooping", "slurred speech",
+      "bone sticking out", "deformed", "can't put any weight", "heard a pop and can't",
+      "fever and back pain", "back pain with fever", "hit my head", "passed out", "fainted",
+      "entumecimiento", "dolor en el pecho", "no puedo respirar", "falta de aire"
+    ]
+  },
+  "not_pt": {
+    "_doc": "Requests physical therapy does not handle. Politely decline and suggest the right kind of provider. No booking.",
+    "terms": ["prescription", "refill", "pain pills", "pain medication", "muscle relaxer", "chiropractic adjustment", "chiropractor", "crack my back", "massage only", "just a massage", "botox", "dental", "tooth", "mri order", "order an mri", "x-ray order", "disability paperwork", "handicap placard"]
+  },
+  "decisions": {
+    "book":               "Eligible. Offer evaluation slots and book.",
+    "book_self_pay":      "Eligible as self-pay. Quote the self-pay price, and book only if the caller agrees.",
+    "need_referral":      "HMO with no referral on file. Do not book. Explain a referral from their primary care doctor is needed first, and request a callback.",
+    "need_claim_number":  "Work injury with no claim number. Do not book. Ask them to get the claim number from their employer or adjuster, and request a callback.",
+    "er_now":             "Red-flag symptom. Do not book. Tell the caller to call 911 or go to the nearest emergency room now.",
+    "decline_not_pt":     "Not a physical therapy request. Do not book. Politely explain and suggest the right kind of provider.",
+    "out_of_area":        "Caller lives outside the Houston area. Do not book. Politely suggest a clinic closer to them.",
+    "need_info":          "Missing required details. Ask for them, then check coverage again."
+  }
+}

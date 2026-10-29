@@ -1,0 +1,282 @@
+{
+ "lang": "vi",
+ "model": "scribe_v1",
+ "text": "Bài tập nâng mông. Nằm ngửa, gập hai đầu gối và đặt bàn chân sát mặt sàn. Siết chặt cơ mông rồi nâng hông lên, giữ trong năm giây. Hạ xuống từ từ. Thực hiện mười lần, nghỉ, sau đó lặp lại ba hiệp. Dừng lại nếu bạn thấy đau nhói ở lưng hoặc hông.",
+ "words": [
+  {
+   "text": "Bài",
+   "start": 0.08,
+   "end": 0.18
+  },
+  {
+   "text": "tập",
+   "start": 0.24,
+   "end": 0.38
+  },
+  {
+   "text": "nâng",
+   "start": 0.46,
+   "end": 0.6
+  },
+  {
+   "text": "mông.",
+   "start": 0.66,
+   "end": 0.96
+  },
+  {
+   "text": "Nằm",
+   "start": 1.74,
+   "end": 1.86
+  },
+  {
+   "text": "ngửa,",
+   "start": 1.9,
+   "end": 2.16
+  },
+  {
+   "text": "gập",
+   "start": 2.54,
+   "end": 2.68
+  },
+  {
+   "text": "hai",
+   "start": 2.74,
+   "end": 2.86
+  },
+  {
+   "text": "đầu",
+   "start": 2.92,
+   "end": 3.04
+  },
+  {
+   "text": "gối",
+   "start": 3.08,
+   "end": 3.34
+  },
+  {
+   "text": "và",
+   "start": 3.52,
+   "end": 3.58
+  },
+  {
+   "text": "đặt",
+   "start": 3.62,
+   "end": 3.74
+  },
+  {
+   "text": "bàn",
+   "start": 3.78,
+   "end": 3.88
+  },
+  {
+   "text": "chân",
+   "start": 3.92,
+   "end": 4.08
+  },
+  {
+   "text": "sát",
+   "start": 4.18,
+   "end": 4.3
+  },
+  {
+   "text": "mặt",
+   "start": 4.34,
+   "end": 4.48
+  },
+  {
+   "text": "sàn.",
+   "start": 4.52,
+   "end": 4.82
+  },
+  {
+   "text": "Siết",
+   "start": 5.4,
+   "end": 5.58
+  },
+  {
+   "text": "chặt",
+   "start": 5.6,
+   "end": 5.78
+  },
+  {
+   "text": "cơ",
+   "start": 5.82,
+   "end": 5.94
+  },
+  {
+   "text": "mông",
+   "start": 6,
+   "end": 6.22
+  },
+  {
+   "text": "rồi",
+   "start": 6.48,
+   "end": 6.68
+  },
+  {
+   "text": "nâng",
+   "start": 6.72,
+   "end": 6.88
+  },
+  {
+   "text": "hông",
+   "start": 6.9,
+   "end": 7.04
+  },
+  {
+   "text": "lên,",
+   "start": 7.12,
+   "end": 7.38
+  },
+  {
+   "text": "giữ",
+   "start": 7.76,
+   "end": 7.9
+  },
+  {
+   "text": "trong",
+   "start": 7.94,
+   "end": 8.1
+  },
+  {
+   "text": "năm",
+   "start": 8.14,
+   "end": 8.28
+  },
+  {
+   "text": "giây.",
+   "start": 8.36,
+   "end": 8.66
+  },
+  {
+   "text": "Hạ",
+   "start": 9.38,
+   "end": 9.5
+  },
+  {
+   "text": "xuống",
+   "start": 9.6,
+   "end": 9.76
+  },
+  {
+   "text": "từ",
+   "start": 9.8,
+   "end": 9.88
+  },
+  {
+   "text": "từ.",
+   "start": 9.96,
+   "end": 10.26
+  },
+  {
+   "text": "Thực",
+   "start": 10.74,
+   "end": 10.84
+  },
+  {
+   "text": "hiện",
+   "start": 10.88,
+   "end": 11.04
+  },
+  {
+   "text": "mười",
+   "start": 11.1,
+   "end": 11.24
+  },
+  {
+   "text": "lần,",
+   "start": 11.3,
+   "end": 11.5
+  },
+  {
+   "text": "nghỉ,",
+   "start": 11.84,
+   "end": 12.14
+  },
+  {
+   "text": "sau",
+   "start": 12.64,
+   "end": 12.76
+  },
+  {
+   "text": "đó",
+   "start": 12.8,
+   "end": 13.04
+  },
+  {
+   "text": "lặp",
+   "start": 13.08,
+   "end": 13.24
+  },
+  {
+   "text": "lại",
+   "start": 13.28,
+   "end": 13.44
+  },
+  {
+   "text": "ba",
+   "start": 13.54,
+   "end": 13.68
+  },
+  {
+   "text": "hiệp.",
+   "start": 13.76,
+   "end": 14
+  },
+  {
+   "text": "Dừng",
+   "start": 14.68,
+   "end": 14.84
+  },
+  {
+   "text": "lại",
+   "start": 14.88,
+   "end": 15.14
+  },
+  {
+   "text": "nếu",
+   "start": 15.18,
+   "end": 15.32
+  },
+  {
+   "text": "bạn",
+   "start": 15.36,
+   "end": 15.52
+  },
+  {
+   "text": "thấy",
+   "start": 15.54,
+   "end": 15.7
+  },
+  {
+   "text": "đau",
+   "start": 15.74,
+   "end": 15.88
+  },
+  {
+   "text": "nhói",
+   "start": 15.96,
+   "end": 16.34
+  },
+  {
+   "text": "ở",
+   "start": 16.4,
+   "end": 16.5
+  },
+  {
+   "text": "lưng",
+   "start": 16.56,
+   "end": 16.74
+  },
+  {
+   "text": "hoặc",
+   "start": 16.82,
+   "end": 17
+  },
+  {
+   "text": "hông.",
+   "start": 17.06,
+   "end": 17.4
+  }
+ ]
+}

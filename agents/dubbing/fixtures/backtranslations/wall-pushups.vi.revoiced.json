@@ -1,0 +1,19 @@
+{
+ "back_translation": "Wall push-ups. Stand about one arm's length away from the wall. Place both hands on the wall at shoulder height, bend your elbows and bring your chest toward the wall, then push yourself away. Perform twelve repetitions per set, do three sets and rest thirty seconds between sets. Stop if you feel a sharp pain in your shoulder.",
+ "claims": [
+  {
+   "kind": "reps",
+   "value": 12
+  },
+  {
+   "kind": "sets",
+   "value": 3
+  },
+  {
+   "kind": "rest_seconds",
+   "value": 30
+  }
+ ],
+ "sides": [],
+ "safety_present": true
+}

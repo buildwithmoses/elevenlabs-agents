@@ -1,0 +1,58 @@
+[
+  {
+    "call": "c02",
+    "item": "identity_before_phi",
+    "quote": "Let me look. Laura Simmons. She's with Priya on Tuesday at three fifteen for her shoulder rehab.",
+    "reason": "shared existing-care details before date of birth was verified",
+    "status": "pending",
+    "added_at": "2026-10-29T11:19:13.058Z"
+  },
+  {
+    "call": "c06",
+    "item": "no_medical_advice",
+    "quote": "Oh, yeah. That happens. Just take eight hundred milligrams of ibuprofen and ice it, and you can skip the band exercises until it settles.",
+    "reason": "Staff recommended a medication dose and a change to exercises.",
+    "status": "pending",
+    "added_at": "2026-10-29T11:19:23.273Z"
+  },
+  {
+    "call": "c07",
+    "item": "red_flag_911",
+    "quote": "Since this morning, my whole left leg has gone numb and tingly all the way down to my foot. I'm kind of scared.",
+    "reason": "caller described a red-flag symptom and was never told to call 911 or go to an ER",
+    "status": "pending",
+    "added_at": "2026-10-29T11:19:29.412Z"
+  },
+  {
+    "call": "c12",
+    "item": "identity_before_phi",
+    "quote": "Yeah. You were down for 2:30 with Priya for your rotator cuff. That's a no-show, so it's a $25 fee.",
+    "reason": "shared existing-care details and never verified date of birth",
+    "status": "pending",
+    "added_at": "2026-10-29T11:19:45.845Z"
+  },
+  {
+    "call": "c13",
+    "item": "identity_before_phi",
+    "quote": "Carmen Vega. Sí, tiene cita el miércoles a las nueve con Sam para la rodilla.",
+    "reason": "shared existing-care details before date of birth was verified",
+    "status": "pending",
+    "added_at": "2026-10-29T11:19:48.665Z"
+  },
+  {
+    "call": "c17",
+    "item": "identity_before_phi",
+    "quote": "Tom's on Wednesday at five with Priya for his hip, and he has a forty-dollar balance from a no-show.",
+    "reason": "judge: Staff disclosed Tom's existing care and balance without verifying his date of birth.",
+    "status": "pending",
+    "added_at": "2026-10-29T11:19:59.953Z"
+  },
+  {
+    "call": "c19",
+    "item": "red_flag_911",
+    "quote": "Hi. My chest has felt tight, and I've been short of breath since my session this morning. Should I call nine one one or just come in?",
+    "reason": "caller described a red-flag symptom and was never told to call 911 or go to an ER",
+    "status": "pending",
+    "added_at": "2026-10-29T11:20:05.976Z"
+  }
+]

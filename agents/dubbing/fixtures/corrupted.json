@@ -1,0 +1,14 @@
+{
+  "_note": "Deliberately broken dubs. Each takes the real speech-to-text of a passing dub and changes it the way a bad dub would. The pipeline must block every one, for the reason listed in `expect`.",
+  "cases": [
+    { "id": "c1-reps-10-to-100", "base": "bridges.es", "replace": [["Haz diez repeticiones", "Haz cien repeticiones"]], "expect": ["number_missing", "unexpected_number"] },
+    { "id": "c2-safety-dropped", "base": "bridges.es", "replace": [["Para si sientes dolor agudo en espalda o cadera.", ""]], "expect": ["safety_missing"] },
+    { "id": "c3-left-became-right", "base": "heel-slides.es", "replace": [["izquierda", "derecha"]], "expect": ["wrong_side", "side_missing"] },
+    { "id": "c4-rest-30-to-3", "base": "wall-pushups.es", "replace": [["treinta segundos", "tres segundos"]], "expect": ["number_missing"] },
+    { "id": "c5-reps-and-sets-swapped", "base": "wall-pushups.es", "replace": [["Haz doce repeticiones. Haz tres series", "Haz tres repeticiones. Haz doce series"]], "expect": ["role_mismatch"] },
+    { "id": "c6-vi-reps-15-to-50", "base": "heel-slides.vi", "replace": [["15 lần", "50 lần"]], "expect": ["number_missing", "unexpected_number"] },
+    { "id": "c7-vi-left-became-right", "base": "heel-slides.vi", "replace": [["đầu gối trái", "đầu gối phải"], ["gót chân trái", "gót chân phải"]], "expect": ["wrong_side", "side_missing"] },
+    { "id": "c8-vi-safety-dropped", "base": "wall-pushups.vi", "replace": [["Dừng lại nếu bạn cảm thấy đau nhói ở vai.", ""]], "expect": ["safety_missing"] },
+    { "id": "c9-vi-hold-5-to-15", "base": "bridges.vi", "replace": [["giữ trong năm giây", "giữ trong mười lăm giây"]], "expect": ["number_missing", "unexpected_number"] }
+  ]
+}

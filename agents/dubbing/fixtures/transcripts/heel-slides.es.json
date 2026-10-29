@@ -1,0 +1,190 @@
+{
+ "key": "heel-slides.es",
+ "lang": "es",
+ "model": "scribe_v1",
+ "language_code": "spa",
+ "language_probability": 1,
+ "text": "Deslizamiento de talón solo para la rodilla izquierda. Túmbese boca arriba. Deslice el talón hasta sentir estiramiento. Mantenga tres segundos. Deslícelo hacia afuera. Haga quince repeticiones, dos series, dos veces al día. Pare ante dolor agudo. ",
+ "words": [
+  {
+   "text": "Deslizamiento",
+   "start": 0.32,
+   "end": 1.02
+  },
+  {
+   "text": "de",
+   "start": 1.06,
+   "end": 1.12
+  },
+  {
+   "text": "talón",
+   "start": 1.18,
+   "end": 1.6
+  },
+  {
+   "text": "solo",
+   "start": 2.18,
+   "end": 2.42
+  },
+  {
+   "text": "para",
+   "start": 2.48,
+   "end": 2.68
+  },
+  {
+   "text": "la",
+   "start": 2.72,
+   "end": 2.78
+  },
+  {
+   "text": "rodilla",
+   "start": 2.84,
+   "end": 3.26
+  },
+  {
+   "text": "izquierda.",
+   "start": 3.3,
+   "end": 3.88
+  },
+  {
+   "text": "Túmbese",
+   "start": 4.32,
+   "end": 4.76
+  },
+  {
+   "text": "boca",
+   "start": 4.78,
+   "end": 5.02
+  },
+  {
+   "text": "arriba.",
+   "start": 5.06,
+   "end": 5.5
+  },
+  {
+   "text": "Deslice",
+   "start": 6.04,
+   "end": 6.46
+  },
+  {
+   "text": "el",
+   "start": 6.5,
+   "end": 6.56
+  },
+  {
+   "text": "talón",
+   "start": 6.64,
+   "end": 7.08
+  },
+  {
+   "text": "hasta",
+   "start": 7.1,
+   "end": 7.36
+  },
+  {
+   "text": "sentir",
+   "start": 7.46,
+   "end": 7.78
+  },
+  {
+   "text": "estiramiento.",
+   "start": 7.84,
+   "end": 8.62
+  },
+  {
+   "text": "Mantenga",
+   "start": 9.12,
+   "end": 9.54
+  },
+  {
+   "text": "tres",
+   "start": 9.66,
+   "end": 9.86
+  },
+  {
+   "text": "segundos.",
+   "start": 9.92,
+   "end": 10.6
+  },
+  {
+   "text": "Deslícelo",
+   "start": 11,
+   "end": 11.66
+  },
+  {
+   "text": "hacia",
+   "start": 11.7,
+   "end": 11.98
+  },
+  {
+   "text": "afuera.",
+   "start": 12.02,
+   "end": 12.5
+  },
+  {
+   "text": "Haga",
+   "start": 12.96,
+   "end": 13.24
+  },
+  {
+   "text": "quince",
+   "start": 13.28,
+   "end": 13.58
+  },
+  {
+   "text": "repeticiones,",
+   "start": 13.64,
+   "end": 14.52
+  },
+  {
+   "text": "dos",
+   "start": 14.78,
+   "end": 14.94
+  },
+  {
+   "text": "series,",
+   "start": 15,
+   "end": 15.44
+  },
+  {
+   "text": "dos",
+   "start": 15.76,
+   "end": 15.92
+  },
+  {
+   "text": "veces",
+   "start": 15.98,
+   "end": 16.239
+  },
+  {
+   "text": "al",
+   "start": 16.3,
+   "end": 16.379
+  },
+  {
+   "text": "día.",
+   "start": 16.44,
+   "end": 16.72
+  },
+  {
+   "text": "Pare",
+   "start": 17.2,
+   "end": 17.44
+  },
+  {
+   "text": "ante",
+   "start": 17.5,
+   "end": 17.66
+  },
+  {
+   "text": "dolor",
+   "start": 17.7,
+   "end": 17.96
+  },
+  {
+   "text": "agudo.",
+   "start": 18.02,
+   "end": 18.44
+  }
+ ]
+}

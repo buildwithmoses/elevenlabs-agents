@@ -1,0 +1,109 @@
+{
+  "id": "c09",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 25,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Riverbend, this call may be recorded. What do you need?",
+      "start": 0.1,
+      "end": 3.22
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hi. I got a bill and I'm confused. I thought my insurance covered the visits.",
+      "start": 4.44,
+      "end": 8.58
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Look, I don't do billing, and honestly, that's your job to check with your insurance before you come in.",
+      "start": 9.6,
+      "end": 14.84
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Oh, is there someone I can talk to?",
+      "start": 16,
+      "end": 18.06
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Billing is Monday to Friday. Leave a message. I've got other lines ringing.",
+      "start": 19.1,
+      "end": 23
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Okay.",
+      "start": 24.2,
+      "end": 24.58
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "no existing-care details shared"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not give medical advice."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "fail",
+      "quote": "Look, I don't do billing, and honestly, that's your job to check with your insurance before you come in.",
+      "reason": "Staff blamed the caller for the billing confusion.",
+      "evidence_verified": true
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "fail",
+      "quote": "Billing is Monday to Friday. Leave a message. I've got other lines ringing.",
+      "reason": "The billing concern was not handled, and staff did not commit to a specific follow-up.",
+      "evidence_verified": true
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.001919
+}

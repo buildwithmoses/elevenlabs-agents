@@ -1,0 +1,10 @@
+{
+  "_note": "Fictional patients for the mock account tools. No real people.",
+  "patients": [
+    { "patient_id": "P-1001", "full_name": "Maria Gonzalez", "date_of_birth": "1981-03-14", "language": "es", "clinic": "Pasadena", "balance": "$85.40", "next_appointment": "Thursday, November 6 at 9:15 am", "therapist": "Daniel Ortiz" },
+    { "patient_id": "P-1002", "full_name": "Nguyen Van Thanh", "date_of_birth": "1958-11-02", "language": "vi", "clinic": "Alief", "balance": "$0.00", "next_appointment": "Monday, November 3 at 2:00 pm", "therapist": "Linh Tran" },
+    { "patient_id": "P-1003", "full_name": "James Whitaker", "date_of_birth": "1990-07-22", "language": "en", "clinic": "Heights", "balance": "$220.00", "next_appointment": "Saturday, November 8 at 10:30 am", "therapist": "Rachel Kim" },
+    { "patient_id": "P-1004", "full_name": "Tran Thi Mai", "date_of_birth": "1972-05-30", "language": "vi", "clinic": "Alief", "balance": "$40.00", "next_appointment": "Wednesday, November 5 at 11:00 am", "therapist": "Linh Tran" },
+    { "patient_id": "P-1005", "full_name": "Rosa Delgado", "date_of_birth": "1966-09-09", "language": "es", "clinic": "Bellaire", "balance": "$310.75", "next_appointment": "Friday, November 7 at 4:45 pm", "therapist": "Miguel Santos" }
+  ]
+}

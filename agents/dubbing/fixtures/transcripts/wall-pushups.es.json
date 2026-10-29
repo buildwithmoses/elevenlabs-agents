@@ -1,0 +1,320 @@
+{
+ "key": "wall-pushups.es",
+ "lang": "es",
+ "model": "scribe_v1",
+ "language_code": "spa",
+ "language_probability": 1,
+ "text": "Flexiones en la pared. Ponte a la distancia de un brazo de la pared. Pon las manos en la pared a la altura de los hombros. Dobla los codos y acerca el pecho a la pared. Luego empuja hacia atrás. Haz doce repeticiones. Haz tres series y descansa treinta segundos entre cada una. Para si sientes un dolor agudo en el hombro.",
+ "words": [
+  {
+   "text": "Flexiones",
+   "start": 0.18,
+   "end": 0.7
+  },
+  {
+   "text": "en",
+   "start": 0.74,
+   "end": 0.8
+  },
+  {
+   "text": "la",
+   "start": 0.84,
+   "end": 0.88
+  },
+  {
+   "text": "pared.",
+   "start": 0.94,
+   "end": 1.26
+  },
+  {
+   "text": "Ponte",
+   "start": 1.6,
+   "end": 1.86
+  },
+  {
+   "text": "a",
+   "start": 1.88,
+   "end": 1.92
+  },
+  {
+   "text": "la",
+   "start": 1.96,
+   "end": 2
+  },
+  {
+   "text": "distancia",
+   "start": 2.04,
+   "end": 2.62
+  },
+  {
+   "text": "de",
+   "start": 2.7,
+   "end": 2.78
+  },
+  {
+   "text": "un",
+   "start": 2.86,
+   "end": 2.94
+  },
+  {
+   "text": "brazo",
+   "start": 2.98,
+   "end": 3.3
+  },
+  {
+   "text": "de",
+   "start": 3.32,
+   "end": 3.38
+  },
+  {
+   "text": "la",
+   "start": 3.42,
+   "end": 3.44
+  },
+  {
+   "text": "pared.",
+   "start": 3.5,
+   "end": 3.82
+  },
+  {
+   "text": "Pon",
+   "start": 4.18,
+   "end": 4.32
+  },
+  {
+   "text": "las",
+   "start": 4.36,
+   "end": 4.48
+  },
+  {
+   "text": "manos",
+   "start": 4.54,
+   "end": 4.78
+  },
+  {
+   "text": "en",
+   "start": 4.82,
+   "end": 4.88
+  },
+  {
+   "text": "la",
+   "start": 4.9,
+   "end": 4.98
+  },
+  {
+   "text": "pared",
+   "start": 5,
+   "end": 5.3
+  },
+  {
+   "text": "a",
+   "start": 5.36,
+   "end": 5.4
+  },
+  {
+   "text": "la",
+   "start": 5.44,
+   "end": 5.48
+  },
+  {
+   "text": "altura",
+   "start": 5.5,
+   "end": 5.84
+  },
+  {
+   "text": "de",
+   "start": 5.88,
+   "end": 5.94
+  },
+  {
+   "text": "los",
+   "start": 5.98,
+   "end": 6.1
+  },
+  {
+   "text": "hombros.",
+   "start": 6.12,
+   "end": 6.58
+  },
+  {
+   "text": "Dobla",
+   "start": 7.02,
+   "end": 7.28
+  },
+  {
+   "text": "los",
+   "start": 7.32,
+   "end": 7.44
+  },
+  {
+   "text": "codos",
+   "start": 7.52,
+   "end": 7.88
+  },
+  {
+   "text": "y",
+   "start": 7.98,
+   "end": 8.039
+  },
+  {
+   "text": "acerca",
+   "start": 8.1,
+   "end": 8.5
+  },
+  {
+   "text": "el",
+   "start": 8.54,
+   "end": 8.6
+  },
+  {
+   "text": "pecho",
+   "start": 8.7,
+   "end": 8.92
+  },
+  {
+   "text": "a",
+   "start": 8.96,
+   "end": 8.98
+  },
+  {
+   "text": "la",
+   "start": 9.02,
+   "end": 9.06
+  },
+  {
+   "text": "pared.",
+   "start": 9.12,
+   "end": 9.42
+  },
+  {
+   "text": "Luego",
+   "start": 9.76,
+   "end": 10.16
+  },
+  {
+   "text": "empuja",
+   "start": 10.22,
+   "end": 10.6
+  },
+  {
+   "text": "hacia",
+   "start": 10.62,
+   "end": 10.8
+  },
+  {
+   "text": "atrás.",
+   "start": 10.82,
+   "end": 11.2
+  },
+  {
+   "text": "Haz",
+   "start": 11.54,
+   "end": 11.7
+  },
+  {
+   "text": "doce",
+   "start": 11.8,
+   "end": 12.02
+  },
+  {
+   "text": "repeticiones.",
+   "start": 12.08,
+   "end": 12.8
+  },
+  {
+   "text": "Haz",
+   "start": 13.12,
+   "end": 13.32
+  },
+  {
+   "text": "tres",
+   "start": 13.36,
+   "end": 13.52
+  },
+  {
+   "text": "series",
+   "start": 13.56,
+   "end": 13.92
+  },
+  {
+   "text": "y",
+   "start": 14.04,
+   "end": 14.08
+  },
+  {
+   "text": "descansa",
+   "start": 14.12,
+   "end": 14.56
+  },
+  {
+   "text": "treinta",
+   "start": 14.64,
+   "end": 14.94
+  },
+  {
+   "text": "segundos",
+   "start": 15,
+   "end": 15.42
+  },
+  {
+   "text": "entre",
+   "start": 15.48,
+   "end": 15.68
+  },
+  {
+   "text": "cada",
+   "start": 15.72,
+   "end": 15.94
+  },
+  {
+   "text": "una.",
+   "start": 16.02,
+   "end": 16.239
+  },
+  {
+   "text": "Para",
+   "start": 16.42,
+   "end": 16.6
+  },
+  {
+   "text": "si",
+   "start": 16.66,
+   "end": 16.76
+  },
+  {
+   "text": "sientes",
+   "start": 16.8,
+   "end": 17.18
+  },
+  {
+   "text": "un",
+   "start": 17.24,
+   "end": 17.32
+  },
+  {
+   "text": "dolor",
+   "start": 17.36,
+   "end": 17.6
+  },
+  {
+   "text": "agudo",
+   "start": 17.66,
+   "end": 18.02
+  },
+  {
+   "text": "en",
+   "start": 18.06,
+   "end": 18.12
+  },
+  {
+   "text": "el",
+   "start": 18.14,
+   "end": 18.22
+  },
+  {
+   "text": "hombro.",
+   "start": 18.26,
+   "end": 18.6
+  }
+ ]
+}

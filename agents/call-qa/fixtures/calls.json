@@ -1,0 +1,927 @@
+{
+ "note": "Fictional front-desk calls for Riverbend Physical Therapy. A = staff (front desk), C = caller. Labels: pass | fail | na.",
+ "calls": [
+  {
+   "id": "c01",
+   "lang": "en",
+   "title": "Clean new-patient booking",
+   "lines": [
+    [
+     "A",
+     "Thank you for calling Riverbend Physical Therapy, Heights clinic. This call may be recorded for quality. This is Dana, how can I help?"
+    ],
+    [
+     "C",
+     "Hi, my doctor referred me for lower back pain and I'd like to set up a first visit."
+    ],
+    [
+     "A",
+     "Happy to help. Can I get your full name and date of birth?"
+    ],
+    [
+     "C",
+     "Sure, it's Marco Delgado, March fourth, nineteen eighty-eight."
+    ],
+    [
+     "A",
+     "Thanks, Marco. What insurance do you have?"
+    ],
+    [
+     "C",
+     "Lone Star Health PPO."
+    ],
+    [
+     "A",
+     "We take that. I have an evaluation open this Thursday at nine in the morning with Jordan Pike. Does that work?"
+    ],
+    [
+     "C",
+     "Yes, that's perfect."
+    ],
+    [
+     "A",
+     "You're booked for Thursday at nine. Please arrive fifteen minutes early with your insurance card and photo ID. Anything else I can help with?"
+    ],
+    [
+     "C",
+     "No, that's it. Thanks!"
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c02",
+   "lang": "en",
+   "title": "Appointment details shared before identity check",
+   "lines": [
+    [
+     "A",
+     "Riverbend Physical Therapy, this call may be recorded. This is Kim speaking."
+    ],
+    [
+     "C",
+     "Hey, I'm calling about my wife, Laura Simmons. When is her next appointment?"
+    ],
+    [
+     "A",
+     "Let me look. Laura Simmons, she's with Priya on Tuesday at three fifteen for her shoulder rehab."
+    ],
+    [
+     "C",
+     "Okay great, and does she owe anything?"
+    ],
+    [
+     "A",
+     "Oh, before I go further, can I get her date of birth?"
+    ],
+    [
+     "C",
+     "June tenth, nineteen seventy-nine."
+    ],
+    [
+     "A",
+     "Thanks. She has a forty dollar balance from a late cancellation."
+    ],
+    [
+     "C",
+     "Got it, I'll let her know. Bye."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "fail",
+    "fee_correct": "pass",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c03",
+   "lang": "en",
+   "title": "Reschedule with identity verified first",
+   "lines": [
+    [
+     "A",
+     "Thanks for calling Riverbend Physical Therapy. This call may be recorded for quality. How can I help?"
+    ],
+    [
+     "C",
+     "I need to move my appointment this week."
+    ],
+    [
+     "A",
+     "Sure. Can I have your name and date of birth to pull up your chart?"
+    ],
+    [
+     "C",
+     "Tanya Brooks, October second, nineteen ninety-one."
+    ],
+    [
+     "A",
+     "Thank you, Tanya. I see you on Wednesday at four with Sam. When would work better?"
+    ],
+    [
+     "C",
+     "Is there anything Friday morning?"
+    ],
+    [
+     "A",
+     "Friday at eight thirty is open with Sam. Should I move you there?"
+    ],
+    [
+     "C",
+     "Yes please."
+    ],
+    [
+     "A",
+     "Done. You're now Friday at eight thirty. You'll get a text confirmation shortly."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c04",
+   "lang": "en",
+   "title": "Wrong late-cancellation fee quoted",
+   "lines": [
+    [
+     "A",
+     "Riverbend Physical Therapy, Katy clinic. This call may be recorded. How can I help you?"
+    ],
+    [
+     "C",
+     "I need to cancel tomorrow morning's appointment, something came up at work."
+    ],
+    [
+     "A",
+     "No problem. What's your name and date of birth?"
+    ],
+    [
+     "C",
+     "Derek Lin, January twentieth, nineteen eighty-two."
+    ],
+    [
+     "A",
+     "Thanks, Derek. I see your eight a.m. tomorrow. Since that's less than twenty-four hours away, there's a seventy-five dollar late cancellation fee."
+    ],
+    [
+     "C",
+     "Seventy-five? Wow. Okay, cancel it anyway."
+    ],
+    [
+     "A",
+     "It's cancelled. Would you like to book another time?"
+    ],
+    [
+     "C",
+     "I'll call back next week."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "fail",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c05",
+   "lang": "es",
+   "title": "Spanish cancellation, correct fee and identity check",
+   "lines": [
+    [
+     "A",
+     "Gracias por llamar a Riverbend Physical Therapy. Esta llamada puede ser grabada. ¿En qué le puedo ayudar?"
+    ],
+    [
+     "C",
+     "Hola, necesito cancelar mi cita de mañana."
+    ],
+    [
+     "A",
+     "Claro. ¿Me da su nombre completo y su fecha de nacimiento?"
+    ],
+    [
+     "C",
+     "Rosa Martínez, el quince de agosto de mil novecientos setenta."
+    ],
+    [
+     "A",
+     "Gracias, señora Martínez. Veo su cita de mañana a las diez. Como faltan menos de veinticuatro horas, hay un cargo de cuarenta dólares, pero se lo podemos perdonar una vez al año."
+    ],
+    [
+     "C",
+     "Ay, gracias. Sí, por favor cancélela."
+    ],
+    [
+     "A",
+     "Listo, está cancelada y no se le cobrará el cargo. ¿Quiere reprogramar?"
+    ],
+    [
+     "C",
+     "Sí, para la próxima semana el martes."
+    ],
+    [
+     "A",
+     "Tengo el martes a las once. Queda apuntada. Le enviaremos un mensaje de confirmación."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "pass",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c06",
+   "lang": "en",
+   "title": "Medical advice given",
+   "lines": [
+    [
+     "A",
+     "Riverbend Physical Therapy, this call may be recorded. How can I help?"
+    ],
+    [
+     "C",
+     "Hi, my knee's a little sore and puffy after yesterday's session. Is that normal?"
+    ],
+    [
+     "A",
+     "Oh yeah, that happens. Just take eight hundred milligrams of ibuprofen and ice it, and you can skip the band exercises until it settles."
+    ],
+    [
+     "C",
+     "Okay, should I still come Thursday?"
+    ],
+    [
+     "A",
+     "Can I get your name and date of birth first?"
+    ],
+    [
+     "C",
+     "Ben Ortiz, May ninth, nineteen ninety-five."
+    ],
+    [
+     "A",
+     "Thanks, Ben. You're still on for Thursday at one. Mention the soreness to your therapist then."
+    ],
+    [
+     "C",
+     "Will do, thanks."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "fail",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c07",
+   "lang": "en",
+   "title": "Red flag symptom, no 911 guidance",
+   "lines": [
+    [
+     "A",
+     "Thank you for calling Riverbend Physical Therapy. This call may be recorded. How can I help?"
+    ],
+    [
+     "C",
+     "Since this morning my whole left leg has gone numb and tingly, all the way down to my foot. I'm kind of scared."
+    ],
+    [
+     "A",
+     "Okay. Let me find you a time. Can I get your name and date of birth?"
+    ],
+    [
+     "C",
+     "Grace Walker, February eleventh, nineteen sixty-four."
+    ],
+    [
+     "A",
+     "Thanks, Grace. The earliest I have is Friday at two with Jordan."
+    ],
+    [
+     "C",
+     "Friday? Okay, I guess I'll wait."
+    ],
+    [
+     "A",
+     "Great, you're booked for Friday at two."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "fail",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c08",
+   "lang": "es",
+   "title": "Spanish red flag handled with 911",
+   "lines": [
+    [
+     "A",
+     "Riverbend Physical Therapy, esta llamada puede ser grabada. ¿En qué le ayudo?"
+    ],
+    [
+     "C",
+     "Buenas, tengo cita el jueves, pero desde hace una hora tengo dolor en el pecho y me falta el aire."
+    ],
+    [
+     "A",
+     "Señor, eso puede ser una emergencia. Por favor, cuelgue y llame al nueve uno uno ahora mismo, o vaya a la sala de emergencias más cercana."
+    ],
+    [
+     "C",
+     "¿De verdad? Está bien, voy a llamar."
+    ],
+    [
+     "A",
+     "Sí, por favor hágalo ahora. Nosotros nos encargamos de su cita después. Cuídese."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "pass",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c09",
+   "lang": "en",
+   "title": "Rude and dismissive",
+   "lines": [
+    [
+     "A",
+     "Riverbend, this call may be recorded. What do you need?"
+    ],
+    [
+     "C",
+     "Hi, I got a bill and I'm confused, I thought my insurance covered the visits."
+    ],
+    [
+     "A",
+     "Look, I don't do billing, and honestly that's your job to check with your insurance before you come in."
+    ],
+    [
+     "C",
+     "Oh. Is there someone I can talk to?"
+    ],
+    [
+     "A",
+     "Billing is Monday to Friday. Leave a message. I've got other lines ringing."
+    ],
+    [
+     "C",
+     "Okay..."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "fail",
+    "resolved": "fail"
+   }
+  },
+  {
+   "id": "c10",
+   "lang": "en",
+   "title": "Unresolved, no follow-up",
+   "lines": [
+    [
+     "A",
+     "Thanks for calling Riverbend Physical Therapy. This call may be recorded. How can I help?"
+    ],
+    [
+     "C",
+     "Hi, I need a copy of my visit notes sent to my surgeon before my follow-up next week."
+    ],
+    [
+     "A",
+     "Oh, records requests. I'm not really sure how that works."
+    ],
+    [
+     "C",
+     "Is there a form, or someone who handles it?"
+    ],
+    [
+     "A",
+     "I don't know, maybe try calling back another day and someone might know."
+    ],
+    [
+     "C",
+     "Alright, thanks I guess."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "fail"
+   }
+  },
+  {
+   "id": "c11",
+   "lang": "en",
+   "title": "Recording disclosure missing",
+   "lines": [
+    [
+     "A",
+     "Good afternoon, Riverbend Physical Therapy, Bellaire. This is Omar."
+    ],
+    [
+     "C",
+     "Hi, what are your Saturday hours?"
+    ],
+    [
+     "A",
+     "On Saturdays only our Heights and Katy clinics are open, from eight to one. Bellaire is closed."
+    ],
+    [
+     "C",
+     "Okay, and do you take BayouCare?"
+    ],
+    [
+     "A",
+     "We do. BayouCare HMO needs a referral from your doctor before your first visit."
+    ],
+    [
+     "C",
+     "Perfect, thanks."
+    ],
+    [
+     "A",
+     "You're welcome, have a good day."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "fail",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c12",
+   "lang": "en",
+   "title": "Several failures in one call",
+   "lines": [
+    [
+     "A",
+     "Riverbend, this is Jess."
+    ],
+    [
+     "C",
+     "Hi, it's Paul Grant. Did I miss my appointment yesterday? I totally forgot."
+    ],
+    [
+     "A",
+     "Yeah, you were down for two thirty with Priya for your rotator cuff. That's a no-show, so it's a twenty-five dollar fee."
+    ],
+    [
+     "C",
+     "Ugh. Can I rebook?"
+    ],
+    [
+     "A",
+     "Sure, Monday at ten?"
+    ],
+    [
+     "C",
+     "Fine."
+    ],
+    [
+     "A",
+     "Okay, you're set for Monday at ten."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "fail",
+    "identity_before_phi": "fail",
+    "fee_correct": "fail",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c13",
+   "lang": "es",
+   "title": "Spanish appointment details before identity check",
+   "lines": [
+    [
+     "A",
+     "Riverbend Physical Therapy, esta llamada puede ser grabada. Habla Lucía."
+    ],
+    [
+     "C",
+     "Hola, llamo por mi mamá, Carmen Vega. ¿A qué hora es su terapia esta semana?"
+    ],
+    [
+     "A",
+     "Carmen Vega... sí, tiene cita el miércoles a las nueve con Sam, para la rodilla."
+    ],
+    [
+     "C",
+     "Ah, perfecto. ¿Y el viernes también?"
+    ],
+    [
+     "A",
+     "Permítame, ¿me da su fecha de nacimiento?"
+    ],
+    [
+     "C",
+     "Tres de marzo de mil novecientos cincuenta y ocho."
+    ],
+    [
+     "A",
+     "Gracias. No, solo tiene la del miércoles."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "fail",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c14",
+   "lang": "en",
+   "title": "Self-pay prices quoted correctly",
+   "lines": [
+    [
+     "A",
+     "Thank you for calling Riverbend Physical Therapy. This call may be recorded for quality. How can I help?"
+    ],
+    [
+     "C",
+     "Hi, I don't have insurance right now. What does it cost to come in?"
+    ],
+    [
+     "A",
+     "Our self-pay rate is one hundred sixty dollars for the first evaluation and one hundred ten dollars for each follow-up visit."
+    ],
+    [
+     "C",
+     "Okay. And if I cancel late?"
+    ],
+    [
+     "A",
+     "With less than twenty-four hours' notice it's a forty dollar fee, and we waive it once a year."
+    ],
+    [
+     "C",
+     "That's fair. I'll call back to book once I check my schedule."
+    ],
+    [
+     "A",
+     "Sounds good. We're here weekdays seven to seven."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "pass",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c15",
+   "lang": "en",
+   "title": "Caller quotes the wrong fee, staff corrects it",
+   "hard": "speaker attribution",
+   "lines": [
+    [
+     "A",
+     "Riverbend Physical Therapy, this call may be recorded. How can I help?"
+    ],
+    [
+     "C",
+     "I have to cancel today's four o'clock. Last time somebody told me the late fee is seventy-five dollars, is that right?"
+    ],
+    [
+     "A",
+     "Let me check your account first. Your name and date of birth, please?"
+    ],
+    [
+     "C",
+     "Nadia Haddad, April twelfth, nineteen ninety."
+    ],
+    [
+     "A",
+     "Thanks, Nadia. I see your four o'clock today. The late cancellation fee is actually forty dollars, not seventy-five, and since it's your first one this year we can waive it."
+    ],
+    [
+     "C",
+     "Oh, that's great, thank you."
+    ],
+    [
+     "A",
+     "You're welcome. It's cancelled. Want to rebook for next week?"
+    ],
+    [
+     "C",
+     "Not yet, I'll call back."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "pass",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c16",
+   "lang": "en",
+   "title": "Recording notice only at the end of the call",
+   "hard": "order of turns",
+   "lines": [
+    [
+     "A",
+     "Good morning, Riverbend Physical Therapy, Spring clinic, this is Ana."
+    ],
+    [
+     "C",
+     "Hi, do you have parking at the Spring location?"
+    ],
+    [
+     "A",
+     "Yes, there's a free lot right behind the building."
+    ],
+    [
+     "C",
+     "Great. And is there anything open Saturday there?"
+    ],
+    [
+     "A",
+     "Spring is closed on Saturdays. Heights and Katy are open eight to one."
+    ],
+    [
+     "C",
+     "Okay, thanks."
+    ],
+    [
+     "A",
+     "Sure thing. Oh, and just so you know, this call may be recorded for quality. Have a good day."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "fail",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c17",
+   "lang": "en",
+   "title": "Verified caller, then the spouse's details shared",
+   "hard": "needs judgement: whose identity was verified",
+   "lines": [
+    [
+     "A",
+     "Thank you for calling Riverbend Physical Therapy. This call may be recorded. How can I help?"
+    ],
+    [
+     "C",
+     "Hi, I want to check my appointment and my husband's too."
+    ],
+    [
+     "A",
+     "Sure. Your name and date of birth?"
+    ],
+    [
+     "C",
+     "Megan Fox-Hill, September third, nineteen eighty-five."
+    ],
+    [
+     "A",
+     "Thanks, Megan. You're on Monday at eleven with Sam."
+    ],
+    [
+     "C",
+     "And my husband, Tom Hill?"
+    ],
+    [
+     "A",
+     "Tom's on Wednesday at five with Priya for his hip, and he has a forty dollar balance from a no-show."
+    ],
+    [
+     "C",
+     "Okay, thanks. I'll tell him."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "fail",
+    "fee_correct": "pass",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c18",
+   "lang": "en",
+   "title": "Caller denies red-flag symptoms",
+   "hard": "negation",
+   "lines": [
+    [
+     "A",
+     "Riverbend Physical Therapy, this call may be recorded. How can I help?"
+    ],
+    [
+     "C",
+     "My neck has been stiff since my car accident last week. No numbness or tingling, no chest pain, just stiff and sore."
+    ],
+    [
+     "A",
+     "I'm sorry to hear that. Do you have a referral or a workers' comp or auto claim?"
+    ],
+    [
+     "C",
+     "My doctor gave me a referral, and I have BayouCare."
+    ],
+    [
+     "A",
+     "Great, BayouCare needs that referral, so bring it in. Can I get your name and date of birth to set up an evaluation?"
+    ],
+    [
+     "C",
+     "Luis Pena, December first, nineteen seventy-seven."
+    ],
+    [
+     "A",
+     "Thanks, Luis. I have Tuesday at ten at Bellaire. Does that work?"
+    ],
+    [
+     "C",
+     "Yes."
+    ],
+    [
+     "A",
+     "You're booked Tuesday at ten. Bring your referral and insurance card."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c19",
+   "lang": "en",
+   "title": "Caller mentions 911, staff ignores the red flag",
+   "hard": "speaker attribution",
+   "lines": [
+    [
+     "A",
+     "Thank you for calling Riverbend Physical Therapy. This call may be recorded. How can I help?"
+    ],
+    [
+     "C",
+     "Hi, my chest has felt tight and I've been short of breath since my session this morning. Should I call 911 or just come in?"
+    ],
+    [
+     "A",
+     "Hmm, I can't really say. Let me see if we can get you in tomorrow. Name and date of birth?"
+    ],
+    [
+     "C",
+     "Walter Greene, July seventh, nineteen fifty-nine."
+    ],
+    [
+     "A",
+     "Thanks, Walter. I have tomorrow at nine with Jordan."
+    ],
+    [
+     "C",
+     "Okay, I'll come in then."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "fail",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  },
+  {
+   "id": "c20",
+   "lang": "es",
+   "title": "Spanish clean call, identity before details",
+   "hard": "control",
+   "lines": [
+    [
+     "A",
+     "Gracias por llamar a Riverbend Physical Therapy. Esta llamada puede ser grabada. Habla Sofía."
+    ],
+    [
+     "C",
+     "Hola, quería confirmar mi cita de esta semana."
+    ],
+    [
+     "A",
+     "Con gusto. ¿Me da su nombre y fecha de nacimiento?"
+    ],
+    [
+     "C",
+     "Jorge Ramírez, veinte de noviembre de mil novecientos ochenta."
+    ],
+    [
+     "A",
+     "Gracias, señor Ramírez. Tiene cita el jueves a las cuatro con Jordan en Pasadena."
+    ],
+    [
+     "C",
+     "Perfecto, gracias."
+    ],
+    [
+     "A",
+     "A usted. Que tenga buen día."
+    ]
+   ],
+   "labels": {
+    "recording_disclosure": "pass",
+    "identity_before_phi": "pass",
+    "fee_correct": "na",
+    "red_flag_911": "na",
+    "no_medical_advice": "pass",
+    "courteous": "pass",
+    "resolved": "pass"
+   }
+  }
+ ]
+}

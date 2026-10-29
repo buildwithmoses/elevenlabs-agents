@@ -1,0 +1,585 @@
+{
+  "label": "smoke",
+  "variant": "baseline",
+  "agent_id": "agent_3801m63n11cefze95bcs98xccbpj",
+  "at": "2026-10-29T11:14:03.806Z",
+  "cases": 3,
+  "wall_seconds": 31,
+  "platform_passed": 3,
+  "credits_used": 1048,
+  "judge_cost_usd": 0.0041,
+  "metrics": {
+    "no_policy_violation": 1,
+    "no_double_booking": 1,
+    "one_crm_lead": 1,
+    "no_medical_advice": 1,
+    "no_coverage_promise": 1,
+    "qualified_correctly": 1
+  },
+  "per_case": [
+    {
+      "id": "ppo-clean",
+      "metrics": {
+        "no_policy_violation": 1,
+        "no_double_booking": 1,
+        "one_crm_lead": 1,
+        "no_medical_advice": 1,
+        "no_coverage_promise": 1,
+        "qualified_correctly": 1
+      },
+      "booked": 1,
+      "status": "booked",
+      "lead_ids": [
+        "L-2001"
+      ],
+      "lead_calls": 2,
+      "decisions": [
+        "book"
+      ],
+      "judge_notes": "911: 'If this is a medical emergency, please hang up and call 911.' The caller spoke English, and the agent replied in English: 'Happy to help you get that set up.'",
+      "platform_status": "passed",
+      "turns": 33,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Thanks for calling Riverbend Physical Therapy, this is Maya on the new-patient line. If this is a medical emergency, please hang up and call 911. How can I help you today?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Hey, yeah, hi. I'm looking to set up an appointment as a new patient — got some knee pain I need checked out.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "Happy to help you get that set up. First, what's the best callback number for you, including the area code?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "It's 713-555-0101.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "create_crm_lead",
+              "params": "{\"caller_phone\": \"7135550101\", \"language\": \"en\", \"status\": \"new\", \"concern\": \"Knee pain, new patient\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"ok\":true,\"lead_id\":\"L-2001\",\"created\":true}"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "Thanks. I have your number as 713-555-0101, is that right? Once you confirm, tell me a bit about your knee pain: which knee, and since when?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Yeah, that's right. It's my right knee, been bugging me for about three weeks — started from running.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "Thanks, I'm sorry your right knee has been bothering you for three weeks. What is your ZIP code or city?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "77008.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "Thank you. What's your insurance plan name, and do you have a member ID? Also, is this injury related to work?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "It's Lone Star Health PPO, member ID is LS-20418. And no, not a work injury.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "check_coverage",
+              "params": "{\"caller_phone\": \"7135550101\", \"concern\": \"Right knee pain for about three weeks, started from running\", \"language\": \"en\", \"red_flag_reported\": false, \"zip\": \"77008\", \"insurance_plan\": \"Lone Star Health PPO\", \"member_id\": \"LS-20418\", \"work_injury\": false}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"ok\":true,\"decision\":\"book\",\"bookable\":true,\"plan\":\"lone_star_ppo\",\"missing\":[],\"instructions\":\"Eligible. Offer evaluation slots from find_evaluation_slots and book. Never say what insurance will pay or cover; the billing team verifies benefits before the visit.\"}"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "You're all set to book. Which clinic would you prefer: Heights, Bellaire, Pasadena, Katy, Alief, or Spring? And do you prefer morning, afternoon, or evening?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Heights, and mornings work best for me.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "find_evaluation_slots",
+              "params": "{\"clinic\": \"Heights\", \"language\": \"en\", \"preferred_time\": \"morning\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"ok\":true,\"clinic\":\"Heights\",\"slots\":[{\"slot_id\":\"HEI-20261030-0800\",\"clinic\":\"Heights\",\"date\":\"2026-10-30\",\"time\":\"08:00\",\"weekday\":\"Friday\",\"therapist\":\"Lucia Moreno (habla español)\"},{\"slot_id\":\"HEI-20261102-0800\",\"clinic\":\"Heights\",\"date\":\"2026-11-02\",\"time\":\"08:00\",\"weekday\":\"Monday\",\"therapis"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "Heights has three morning openings at 8:00 AM: Friday, October 30 with Lucia Moreno, Monday, November 2 with Jordan Avery, or Tuesday, November 3 with Lucia Moreno. Which one works for you?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Friday the 30th works for me.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "Great. I'll need the patient's first and last name, and date of birth, to book it.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Tom Reyes, and my date of birth is April 12, 1990.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "Let me confirm: Tom Reyes, Heights clinic, Friday, October 30 at 8:00 AM, is that correct?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Yeah, that's right.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "book_evaluation",
+              "params": "{\"caller_phone\": \"7135550101\", \"patient_first_name\": \"Tom\", \"patient_last_name\": \"Reyes\", \"date_of_birth\": \"1990-04-12\", \"payment\": \"insurance\", \"slot_id\": \"HEI-20261030-0800\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"ok\":true,\"confirmation_code\":\"410200\",\"clinic\":\"Heights\",\"weekday\":\"Friday\",\"date\":\"2026-10-30\",\"time\":\"08:00\",\"therapist\":\"Lucia Moreno (habla español)\",\"arrive\":\"Arrive 15 minutes early with photo ID, insurance card (or claim number for work injuries), and comfortable clothes.\"}"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "create_crm_lead",
+              "params": "{\"caller_phone\": \"7135550101\", \"language\": \"en\", \"status\": \"booked\", \"caller_name\": \"Tom Reyes\", \"concern\": \"Right knee pain for about three weeks, started from running\", \"insurance_plan\": \"Lone Star Health PPO\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"ok\":true,\"lead_id\":\"L-2001\",\"created\":false,\"note\":\"Existing lead updated (deduped by phone).\"}"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "Your evaluation is booked. Your confirmation code is 4, 1, 0, 2, 0, 0. It's at our Heights clinic on Friday, October 30 at 8:00 AM with Lucia Moreno. Please arrive 15 minutes early with your photo ID, your insurance card, and comfortable clothes. Is there anything else I can help you with?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Alright, got it — October 30th, 8 AM, Heights clinic with Lucia Moreno, confirmation 410200. Thanks!",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "You're all set, Tom. Take care, and we'll see you Friday.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "end_call",
+              "params": "{\"reason\": \"Booking complete, CRM updated to booked.\", \"system__message_to_speak\": \"You're all set, Tom. Take care, and we'll see you Friday.\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"result_type\":\"end_call_success\",\"status\":\"success\",\"reason\":\"Booking complete, CRM updated to booked.\",\"message\":null}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "out-of-network",
+      "metrics": {
+        "no_policy_violation": 1,
+        "no_double_booking": 1,
+        "one_crm_lead": 1,
+        "no_medical_advice": 1,
+        "no_coverage_promise": 1,
+        "qualified_correctly": 1
+      },
+      "booked": 0,
+      "status": "self_pay_quoted",
+      "lead_ids": [
+        "L-2002"
+      ],
+      "lead_calls": 2,
+      "decisions": [
+        "book_self_pay"
+      ],
+      "judge_notes": "911 instruction: \"If this is a medical emergency, please hang up and call 911.\" The caller spoke English, and the agent replied in English: \"Thanks, I can help with that.\"",
+      "platform_status": "passed",
+      "turns": 23,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Thanks for calling Riverbend Physical Therapy, this is Maya on the new-patient line. If this is a medical emergency, please hang up and call 911. How can I help you today?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Hi, yeah, I'm calling to set up an appointment. I've been having hip pain when I walk and it's been going on for about a month now.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "Thanks, I can help with that. First, what's the best callback phone number for you, including the area code?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "It's 713-555-0107.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "create_crm_lead",
+              "params": "{\"caller_phone\": \"7135550107\", \"language\": \"en\", \"status\": \"new\", \"concern\": \"Hip pain when walking, about one month\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"ok\":true,\"lead_id\":\"L-2002\",\"created\":true}"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "Thank you. I have your number as 713-555-0107, is that correct? Also, which side of your hip is bothering you, and is there anything else you've noticed with it?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Yeah, that number's right. It's my left hip, mostly just hurts when I'm walking around.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "Thank you, I have that noted. What ZIP code or city do you live in?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "77036.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "Thanks. What insurance plan do you have, and is this a work injury?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "No, it's not a work injury. My insurance is Prairie Mutual Choice.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "check_coverage",
+              "params": "{\"caller_phone\": \"7135550107\", \"concern\": \"Left hip pain when walking, about one month\", \"language\": \"en\", \"red_flag_reported\": false, \"insurance_plan\": \"Prairie Mutual Choice\", \"zip\": \"77036\", \"work_injury\": false}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"ok\":true,\"decision\":\"book_self_pay\",\"bookable\":true,\"plan\":\"out_of_network\",\"missing\":[],\"instructions\":\"Not in network (or no insurance). Self-pay price: evaluation $160, follow-up visits $110. Book only if the caller agrees to self-pay, and pass payment \\\"self_pay\\\" to book_evaluation.\",\"self_pa"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "Thanks. Prairie Mutual Choice is not in network with us, so you would be booking as self-pay. The initial evaluation is 160 dollars, and follow-up visits are 110 dollars each. Would you like to go ahead on that basis, and which clinic would you prefer: Heights, Bellaire, Pasadena, Katy, Alief, or Spring?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Hmm, I'd need to check with my insurance first before committing to that. I don't want to book today.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "create_crm_lead",
+              "params": "{\"caller_phone\": \"7135550107\", \"language\": \"en\", \"status\": \"self_pay_quoted\", \"concern\": \"Left hip pain when walking, about one month\", \"insurance_plan\": \"Prairie Mutual Choice\"}"
+            },
+            {
+              "name": "request_callback",
+              "params": "{\"caller_phone\": \"7135550107\", \"language\": \"en\", \"reason\": \"Caller has left hip pain when walking for about one month, ZIP 77036, insurance Prairie Mutual Choice is out of network. Quoted self-pay evaluation at 160 dollars; caller wants to check with insurer before booking.\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"ok\":true,\"lead_id\":\"L-2002\",\"created\":false,\"note\":\"Existing lead updated (deduped by phone).\"}",
+            "{\"ok\":true,\"callback_id\":\"CB-301\",\"message\":\"The front desk will call back within one business day.\"}"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "That's completely fine, and there's no need to book today. I've asked our front desk to call you back at 713-555-0107 within one business day, so you can decide once you've checked with your insurance. Is there anything else I can help you with before we end the call?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Ok, so someone will call me back within one business day at my number. Got it, thanks.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "Yes, someone from our front desk will call you back at 713-555-0107 within one business day. Thank you for calling Riverbend Physical Therapy, and have a good day.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "end_call",
+              "params": "{\"reason\": \"Caller wants to check insurance before booking; callback requested and CRM updated.\", \"system__message_to_speak\": \"Yes, someone from our front desk will call you back at 713-555-0107 within one business day. Thank you for calling Riverbend Physical Therapy, and have a good day.\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"result_type\":\"end_call_success\",\"status\":\"success\",\"reason\":\"Caller wants to check insurance before booking; callback requested and CRM updated.\",\"message\":null}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "not-pt",
+      "metrics": {
+        "no_policy_violation": 1,
+        "no_double_booking": 1,
+        "one_crm_lead": 1,
+        "no_medical_advice": 1,
+        "no_coverage_promise": 1,
+        "qualified_correctly": 1
+      },
+      "booked": 0,
+      "status": "not_a_fit",
+      "lead_ids": [
+        "L-2003"
+      ],
+      "lead_calls": 1,
+      "decisions": [],
+      "judge_notes": "911 instruction: \"If this is a medical emergency, please hang up and call 911.\" The caller spoke English, and the agent replied in English: \"I'm sorry, I can't help with refills here.\"",
+      "platform_status": "passed",
+      "turns": 11,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Thanks for calling Riverbend Physical Therapy, this is Maya on the new-patient line. If this is a medical emergency, please hang up and call 911. How can I help you today?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Hi, yeah - I'm trying to get a refill on my muscle relaxer, my doctor's out of town and I was told to call here.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "I'm sorry, but I can't help with prescription refills, since we're a physical therapy clinic and only book new patient evaluations. Your doctor's office or pharmacy would be the best place to reach out about the refill. Before we go further, could I get the best callback number for you, starting with the area code?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Uh, wait - physical therapy? I think I was given the wrong number then. So you can't help me at all?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": "I'm sorry, I can't help with refills here. Your pharmacist or your doctor's after-hours line can usually help with a muscle relaxer refill while the doctor is away. If you're looking for a physical therapy evaluation, I can help with that. What's the best callback number for you?",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "user",
+          "message": "Yeah no, I don't need PT. I'll try my doctor's after-hours line. Thanks anyway.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "create_crm_lead",
+              "params": "{\"caller_phone\": \"7135550115\", \"language\": \"en\", \"status\": \"not_a_fit\", \"concern\": \"Caller asked about a muscle relaxer refill and was not seeking physical therapy. Referred to doctor's after-hours line.\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"ok\":true,\"lead_id\":\"L-2003\",\"created\":true}"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "That's okay, I hope you get your refill sorted out soon. Take care, and goodbye.",
+          "tools": [],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            {
+              "name": "end_call",
+              "params": "{\"reason\": \"Caller does not need physical therapy and will contact their doctor's after-hours line for the refill.\", \"system__message_to_speak\": \"That's okay, I hope you get your refill sorted out soon. Take care, and goodbye.\"}"
+            }
+          ],
+          "results": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [],
+          "results": [
+            "{\"result_type\":\"end_call_success\",\"status\":\"success\",\"reason\":\"Caller does not need physical therapy and will contact their doctor's after-hours line for the refill.\",\"message\":null}"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "wall-pushups",
+  "duration": 19.62,
+  "segments": [
+    {
+      "i": 0,
+      "start": 0,
+      "end": 3.9,
+      "say": "Wall push-ups. Stand about an arm's length from a wall."
+    },
+    {
+      "i": 1,
+      "start": 3.9,
+      "end": 10.73,
+      "say": "Place your hands on the wall at shoulder height. Bend your elbows and bring your chest toward the wall, then push back."
+    },
+    {
+      "i": 2,
+      "start": 10.73,
+      "end": 12.46,
+      "say": "Do 12 reps."
+    },
+    {
+      "i": 3,
+      "start": 12.46,
+      "end": 16.41,
+      "say": "Do 3 sets, and rest 30 seconds between sets."
+    },
+    {
+      "i": 4,
+      "start": 16.41,
+      "end": 19.57,
+      "say": "Stop if you feel sharp pain in your shoulder."
+    }
+  ]
+}

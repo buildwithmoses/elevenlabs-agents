@@ -1,0 +1,123 @@
+{
+  "id": "c15",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 41,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Riverbend Physical Therapy. This call may be recorded. How can I help?",
+      "start": 0.08,
+      "end": 4.62
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "I have to cancel today's four o'clock. Last time, somebody told me the late fee is seventy-five dollars. Is that right?",
+      "start": 5.42,
+      "end": 12.38
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Let me check your account first. Your name and date of birth, please?",
+      "start": 13.36,
+      "end": 16.6
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Nadia Haddad, April twelfth, nineteen ninety.",
+      "start": 17.74,
+      "end": 20.84
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks, Nadia. I see your four o'clock today. The late cancellation fee is actually forty dollars, not seventy-five. And since it's your first one this year, we can waive it.",
+      "start": 22.12,
+      "end": 32.04
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Oh, that's great. Thank you.",
+      "start": 33.06,
+      "end": 34.28
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "You're welcome. It's canceled. Wanna rebook for next week?",
+      "start": 35.34,
+      "end": 38.58
+    },
+    {
+      "i": 7,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Not yet. I'll call back.",
+      "start": 39.64,
+      "end": 40.84
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "date of birth verified before any existing-care details"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "1 price(s) quoted, all match policy"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication or changes to treatment or exercises."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff canceled the appointment and clarified that the fee would be waived."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.001079
+}

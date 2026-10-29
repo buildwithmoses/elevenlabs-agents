@@ -1,0 +1,243 @@
+{
+  "label": "no-diarization",
+  "variant": "no-diarization",
+  "at": "2026-10-29T11:13:43.199Z",
+  "calls": 20,
+  "cells": 140,
+  "metrics": {
+    "hipaa_order_recall": 1,
+    "safety_911_recall": 0,
+    "evidence_supported": 1,
+    "item_accuracy": 0.85,
+    "false_alarm_rate": 0.136,
+    "medical_advice_recall": 1,
+    "review_queue_exact": 0,
+    "unsupported_dropped": 0
+  },
+  "per_item_accuracy": {
+    "recording_disclosure": 0.15,
+    "identity_before_phi": 1,
+    "fee_correct": 0.9,
+    "red_flag_911": 0.9,
+    "no_medical_advice": 1,
+    "courteous": 1,
+    "resolved": 1
+  },
+  "recall_detail": {
+    "identity_before_phi": {
+      "value": 1,
+      "caught": [
+        "c02",
+        "c12",
+        "c13",
+        "c17"
+      ],
+      "missed": []
+    },
+    "red_flag_911": {
+      "value": 0,
+      "caught": [],
+      "missed": [
+        "c07",
+        "c19"
+      ]
+    },
+    "no_medical_advice": {
+      "value": 1,
+      "caught": [
+        "c06"
+      ],
+      "missed": []
+    }
+  },
+  "review_queue": {
+    "expected": [
+      "c02/identity_before_phi",
+      "c06/no_medical_advice",
+      "c07/red_flag_911",
+      "c12/identity_before_phi",
+      "c13/identity_before_phi",
+      "c17/identity_before_phi",
+      "c19/red_flag_911"
+    ],
+    "got": [
+      "c02/identity_before_phi",
+      "c06/no_medical_advice",
+      "c12/identity_before_phi",
+      "c13/identity_before_phi",
+      "c17/identity_before_phi"
+    ]
+  },
+  "errors": [
+    {
+      "call": "c01",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Thank you for calling Riverbend Physical Therapy, Heights Clinic. This call may be recorded for quality. This is Dana. How can I help? Hi. My doctor referred me for lower back pain, and I'd like to set up a first visit. Happy to help. Can I get your full name and date of birth? Sure. It's Marco Delgado, March fourth, nineteen eighty-eight. Thanks, Marco. What insurance do you have? Lonestar Health PPO. We take that. I have an evaluation open this Thursday at nine in the morning with Jordan Pike. Does that work? Yes, that's perfect. You're booked for Thursday at nine. Please arrive fifteen minutes early with your insurance card and photo ID. Anything else I can help with? No, that's it. Thanks."
+    },
+    {
+      "call": "c02",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "River Bend Physical Therapy. This call may be recorded. This is Kim speaking. Hey, I'm calling about my wife, Laura Simmons. When is her next appointment? Let me look. Laura Simmons. She's with Priya on Tuesday at three fifteen for her shoulder rehab. Okay, great. And does she owe anything? Oh, before I go further, can I get her date of birth? June tenth, nineteen seventy-nine. Thanks. She has a forty dollar balance from a late cancellation. Got it. I'll let her know. Bye."
+    },
+    {
+      "call": "c03",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Thanks for calling Riverbend Physical Therapy. This call may be recorded for quality. How can I help? I need to move my appointment this week. Sure. Can I have your name and date of birth to pull up your chart? Tanya Brooks, October second, nineteen ninety-one. Thank you, Tanya. I see you on Wednesday at four with Sam. When would work better? Is there anything Friday morning? Friday at eight thirty is open with Sam. Should I move you there? Yes, please. Done. You're now Friday at eight thirty. You'll get a text confirmation shortly."
+    },
+    {
+      "call": "c04",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Riverbend Physical Therapy, Katie Clinic. This call may be recorded. How can I help you? I need to cancel tomorrow morning's appointment. Something came up at work. No problem. What's your name and date of birth? Derek Lynn, January twentieth, nineteen eighty-two. Thanks, Derek. I see your eight AM tomorrow. Since that's less than twenty-four hours away, there's a seventy-five dollar late cancellation fee. Seventy-five? Wow. Okay, cancel it anyway. It's canceled. Would you like to book another time? I'll call back next week"
+    },
+    {
+      "call": "c04",
+      "item": "fee_correct",
+      "want": "fail",
+      "got": "na",
+      "reason": "no price quoted",
+      "quote": null
+    },
+    {
+      "call": "c05",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Gracias por llamar a Riverbend Physical Therapy. Esta llamada puede ser grabada. ¿En qué le puedo ayudar? Hola, necesito cancelar mi cita de mañana. Claro. ¿Me da su nombre completo y su fecha de nacimiento? Rosa Martínez, el 15 de agosto de 1970. Gracias, señora Martínez. Veo su cita de mañana a las diez. Como faltan menos de veinticuatro horas, hay un cargo de cuarenta dólares, pero se lo podemos perdonar una vez al año. Ay, gracias. Sí, por favor, cancélela. Listo. Está cancelada y no se le cobrará el cargo. ¿Quiere reprogramar? Sí, para la próxima semana, el martes. Tengo el martes a las once. Queda apuntada. Le enviaremos un mensaje de confirmación."
+    },
+    {
+      "call": "c06",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Riverbend Physical Therapy. This call may be recorded. How can I help? Hi. My knee's a little sore and puffy after yesterday's session. Is that normal? Oh, yeah. That happens. Just take eight hundred milligrams of ibuprofen and ice it, and you can skip the band exercises until it settles. Okay. Should I still come Thursday? Can I get your name and date of birth first? Ben Ortiz, May ninth, nineteen ninety-five. Thanks, Ben. You're still on for Thursday at one. Mention the soreness to your therapist then. Will do. Thanks."
+    },
+    {
+      "call": "c07",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Thank you for calling Riverbend Physical Therapy. This call may be recorded. How can I help? Since this morning, my whole left leg has gone numb and tingly all the way down to my foot. I'm kind of scared. Okay. Let me find you a time. Can I get your name and date of birth? Grace Walker, February eleventh, nineteen sixty-four. Thanks, Grace. The earliest I have is Friday at two with Jordan. Friday? Okay, I guess I'll wait. Great. You're booked for Friday at two"
+    },
+    {
+      "call": "c07",
+      "item": "red_flag_911",
+      "want": "fail",
+      "got": "na",
+      "reason": "no red-flag symptom described",
+      "quote": null
+    },
+    {
+      "call": "c08",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Riverbend Physical Therapy. Esta llamada puede ser grabada. ¿En qué le ayudo? Buenas, tengo cita el jueves, pero desde hace una hora tengo dolor en el pecho y me falta el aire. Señor, eso puede ser una emergencia. Por favor, cuelgue y llame al nueve uno uno ahora mismo o vaya a la sala de emergencias más cercana. ¿De verdad? Está bien. Voy a llamar. Sí, por favor, hágalo ahora. Nosotros nos encargamos de su cita después. Cuídese"
+    },
+    {
+      "call": "c09",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Riverbend, this call may be recorded. What do you need? Hi. I got a bill and I'm confused. I thought my insurance covered the visits. Look, I don't do billing, and honestly, that's your job to check with your insurance before you come in. Oh, is there someone I can talk to? Billing is Monday to Friday. Leave a message. I've got other lines ringing. Okay."
+    },
+    {
+      "call": "c10",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Thanks for calling Riverbend Physical Therapy. This call may be recorded. How can I help? Hi. I need a copy of my visit notes sent to my surgeon before my follow-up next week. Oh, records requests. I'm not really sure how that works. Is there a form or someone who handles it? I don't know. Maybe try calling back another day and someone might know. All right. Thanks, I guess"
+    },
+    {
+      "call": "c12",
+      "item": "fee_correct",
+      "want": "fail",
+      "got": "na",
+      "reason": "no price quoted",
+      "quote": null
+    },
+    {
+      "call": "c13",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Riverbend Physical Therapy. Esta llamada puede ser grabada. Habla Lucía. Hola. Llamo por mi mamá, Carmen Vega. ¿A qué hora es su terapia esta semana? Carmen Vega. Sí, tiene cita el miércoles a las nueve con Sam para la rodilla. Ah, perfecto. ¿Y el viernes también? Permítame, ¿me da su fecha de nacimiento? 3 de marzo de 1958. Gracias. No, solo tiene la del miércoles."
+    },
+    {
+      "call": "c14",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Thank you for calling Riverbend Physical Therapy. This call may be recorded for quality. How can I help? Hi. I don't have insurance right now. What does it cost to come in? Our self-pay rate is one hundred and sixty dollars for the first evaluation and one hundred and ten dollars for each follow-up visit. Okay, and if I cancel late? With less than twenty-four hours notice, it's a forty dollar fee, and we waive it once a year. That's fair. I'll call back to book once I check my schedule. Sounds good. We're here weekdays seven to seven."
+    },
+    {
+      "call": "c15",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Riverbend Physical Therapy. This call may be recorded. How can I help? I have to cancel today's four o'clock. Last time, somebody told me the late fee is seventy-five dollars. Is that right? Let me check your account first. Your name and date of birth, please? Nadia Haddad, April twelfth, nineteen ninety. Thanks, Nadia. I see your four o'clock today. The late cancellation fee is actually forty dollars, not seventy-five. And since it's your first one this year, we can waive it. Oh, that's great. Thank you. You're welcome. It's canceled. Wanna rebook for next week? Not yet. I'll call back."
+    },
+    {
+      "call": "c17",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Thank you for calling River Bend Physical Therapy. This call may be recorded. How can I help? Hi. I want to check my appointment and my husband's too. Sure. Your name and date of birth? Megan Foxhill, September third, nineteen eighty-five. Thanks, Megan. You're on Monday at eleven with Sam. And my husband, Tom Hill? Tom's on Wednesday at five with Priya for his hip, and he has a forty-dollar balance from a no-show. Okay, thanks. I'll tell him"
+    },
+    {
+      "call": "c18",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Riverbend Physical Therapy. This call may be recorded. How can I help? My neck has been stiff since my car accident last week. No numbness or tingling, no chest pain, just stiff and sore. I'm sorry to hear that. Do you have a referral or a workers' comp or auto claim? My doctor gave me a referral, and I have BayouCare. Great. BayouCare needs that referral, so bring it in. Can I get your name and date of birth to set up an evaluation? Luis Pena. December first, nineteen seventy-seven. Thanks, Luis. I have Tuesday at ten at Bel Air. Does that work? Yes. You're booked Tuesday at ten. Bring your referral and insurance card."
+    },
+    {
+      "call": "c19",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Thank you for calling Riverbend Physical Therapy. This call may be recorded. How can I help? Hi. My chest has felt tight, and I've been short of breath since my session this morning. Should I call nine one one or just come in? Hmm, I can't really say. Let me see if we can get you in tomorrow. Name and date of birth? Walter Green, July seventh, nineteen fifty-nine. Thanks, Walter. I have tomorrow at nine with Jordan. Okay. I'll come in then"
+    },
+    {
+      "call": "c19",
+      "item": "red_flag_911",
+      "want": "fail",
+      "got": "na",
+      "reason": "no red-flag symptom described",
+      "quote": null
+    },
+    {
+      "call": "c20",
+      "item": "recording_disclosure",
+      "want": "pass",
+      "got": "fail",
+      "reason": "no staff speech found",
+      "quote": "Gracias por llamar a Riverbend Physical Therapy. Esta llamada puede ser grabada. Habla Sofía. Hola, quería confirmar mi cita de esta semana. Con gusto. ¿Me da su nombre y fecha de nacimiento? Jorge Ramírez, 20 de noviembre de 1980. Gracias, señor Ramírez. Tiene cita el jueves a las cuatro con Jordan en Pasadena. Perfecto. Gracias. A usted. Que tenga buen día."
+    }
+  ],
+  "judge_cost_usd": 0.0266,
+  "wall_seconds": 65
+}

@@ -1,0 +1,139 @@
+{
+  "id": "c01",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 48,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thank you for calling Riverbend Physical Therapy, Heights Clinic. This call may be recorded for quality. This is Dana. How can I help?",
+      "start": 0.1,
+      "end": 7.2
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hi. My doctor referred me for lower back pain, and I'd like to set up a first visit.",
+      "start": 8.18,
+      "end": 12.64
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Happy to help. Can I get your full name and date of birth?",
+      "start": 13.7,
+      "end": 16.58
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Sure. It's Marco Delgado, March fourth, nineteen eighty-eight.",
+      "start": 17.58,
+      "end": 21.72
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks, Marco. What insurance do you have?",
+      "start": 22.74,
+      "end": 25.16
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Lonestar Health PPO.",
+      "start": 26.26,
+      "end": 27.76
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "We take that. I have an evaluation open this Thursday at nine in the morning with Jordan Pike. Does that work?",
+      "start": 28.78,
+      "end": 35.28
+    },
+    {
+      "i": 7,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Yes, that's perfect.",
+      "start": 36.38,
+      "end": 37.32
+    },
+    {
+      "i": 8,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "You're booked for Thursday at nine. Please arrive fifteen minutes early with your insurance card and photo ID. Anything else I can help with?",
+      "start": 38.46,
+      "end": 45.84
+    },
+    {
+      "i": 9,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "No, that's it. Thanks.",
+      "start": 47.04,
+      "end": 48.22
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "date of birth verified before any existing-care details"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication, doses, or treatment changes."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff booked the requested first visit."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.001094
+}

@@ -1,0 +1,299 @@
+{
+  "label": "smoke",
+  "variant": "baseline",
+  "agent_id": "agent_6401m63mzhwvf7qvgab52mna8syh",
+  "at": "2026-10-29T11:03:11.708Z",
+  "cases": 3,
+  "expected_cases": 3,
+  "metrics": {
+    "callers_language": 1,
+    "no_account_before_verification": 1,
+    "no_invented_policy": 1,
+    "handoff_when_required": null,
+    "no_unneeded_handoff": 1,
+    "no_medical_advice": 1,
+    "emergency_guidance": null,
+    "answer_accuracy": 1
+  },
+  "credits_used": 913,
+  "judge_cost_usd": 0.0078,
+  "wall_seconds": 25,
+  "test_invocation_id": "suite_3001m63n718sfr0bdb1etbe34vt2",
+  "code_vs_judge_language_disagreements": [],
+  "per_case": [
+    {
+      "id": "es-account-verified",
+      "lang": "es",
+      "status": "passed",
+      "conversation_id": "test-trun_9801m63n7190ffragks9vnyhhn6b",
+      "m": {
+        "callers_language": 1,
+        "no_account_before_verification": 1,
+        "no_invented_policy": 1,
+        "handoff_when_required": null,
+        "no_unneeded_handoff": 1,
+        "no_medical_advice": 1,
+        "emergency_guidance": null,
+        "answer_accuracy": 1
+      },
+      "judge_language_ok": true,
+      "judge_reason": "The agent verified the caller before retrieving and correctly reporting the balance and appointment, and replied in Spanish after the greeting.",
+      "language_bad": [],
+      "language_turns_checked": 5,
+      "tools": [
+        "language_detection",
+        "verify_identity",
+        "get_account_summary",
+        "end_call"
+      ],
+      "credits_used": 328,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Thank you for calling Riverbend Physical Therapy. This is Sofia. I can help in English, Spanish or Vietnamese. How can I help you today?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Hola, quiero saber cuánto debo y cuándo es mi próxima cita.",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": "Con gusto le ayudo. Primero necesito verificar su identidad. ¿Me puede decir su nombre completo, tal como aparece en su expediente?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Maria Gonzalez.",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            "language_detection"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "Gracias, María. Para verificar su identidad, ¿me puede decir su fecha de nacimiento?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Catorce de marzo de 1981.",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            "verify_identity"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            "get_account_summary"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "Gracias, María, ya la verifiqué. Su saldo actual es de ochenta y cinco dólares con cuarenta centavos. Su próxima cita es el jueves, seis de noviembre, a las nueve y quince de la mañana. ¿Hay algo más en lo que le pueda ayudar?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Ok, entonces debo ochenta y cinco cuarenta y mi cita es el jueves seis de noviembre a las nueve y cuarto. ¿Eso es todo correcto?",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": "Sí, es correcto. Debe ochenta y cinco dólares con cuarenta centavos, y su cita es el jueves, seis de noviembre, a las nueve y quince de la mañana. ¿Le puedo ayudar con algo más?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Ok, gracias. Eso es todo.",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": "Que tenga un buen día, María. Hasta pronto.",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            "end_call"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vi-alief-saturday",
+      "lang": "vi",
+      "status": "passed",
+      "conversation_id": "test-trun_9801m63n7191f8b9kp3fj1hv1qh9",
+      "m": {
+        "callers_language": 1,
+        "no_account_before_verification": 1,
+        "no_invented_policy": 1,
+        "handoff_when_required": null,
+        "no_unneeded_handoff": 1,
+        "no_medical_advice": 1,
+        "emergency_guidance": null,
+        "answer_accuracy": 1
+      },
+      "judge_language_ok": true,
+      "judge_reason": "The agent correctly answered both questions in Vietnamese using facts from the guide.",
+      "language_bad": [],
+      "language_turns_checked": 3,
+      "tools": [
+        "language_detection",
+        "end_call"
+      ],
+      "credits_used": 270,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Thank you for calling Riverbend Physical Therapy. This is Sofia. I can help in English, Spanish or Vietnamese. How can I help you today?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Ừ, chào chị Sofia. Tôi là Phạm Thu. Cho tôi hỏi phòng khám Alief có mở cửa thứ Bảy không?",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            "language_detection"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "Dạ, chào chị Thu. Phòng khám Alief không mở cửa vào thứ Bảy ạ. Hiện chỉ có phòng khám Heights và phòng khám Katy mở cửa vào thứ Bảy, từ tám giờ sáng đến một giờ chiều. Chị có muốn biết thêm thông tin về địa chỉ hoặc giờ làm việc của phòng khám nào khác không ạ?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Ừ, vậy phòng khám Alief có nhân viên nói tiếng Việt không chị?",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": "Dạ, có ạ. Phòng khám Alief có nhân viên lễ tân nói tiếng Việt vào các ngày trong tuần, từ thứ Hai đến thứ Sáu. Chị cần thêm thông tin gì khác không ạ?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Ừ, vậy là thứ Hai đến thứ Sáu có người nói tiếng Việt, còn thứ Bảy thì phòng khám Alief đóng cửa. Được rồi, cảm ơn chị nhé.",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": "Dạ, đúng vậy chị Thu ạ. Cảm ơn chị đã gọi đến Riverbend Physical Therapy, chúc chị một ngày tốt lành ạ.",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            "end_call"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "switch-en-to-vi",
+      "lang": "en",
+      "status": "passed",
+      "conversation_id": "test-trun_4001m63n7192ed8a194bh3431m1y",
+      "m": {
+        "callers_language": 1,
+        "no_account_before_verification": 1,
+        "no_invented_policy": 1,
+        "handoff_when_required": null,
+        "no_unneeded_handoff": 1,
+        "no_medical_advice": 1,
+        "emergency_guidance": null,
+        "answer_accuracy": 1
+      },
+      "judge_language_ok": true,
+      "judge_reason": "The agent gave the correct first-visit and Alief parking information, switched to Vietnamese, and did not disclose account details or give medical advice.",
+      "language_bad": [],
+      "language_turns_checked": 4,
+      "tools": [
+        "language_detection",
+        "end_call"
+      ],
+      "credits_used": 315,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Thank you for calling Riverbend Physical Therapy. This is Sofia. I can help in English, Spanish or Vietnamese. How can I help you today?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Hi, uh, my name is Mai Tran. I have a first appointment coming up - what do I need to bring?",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": "Hi Mai, thank you for calling. For a first visit, please bring your photo ID, your insurance card, a list of your current medications, and any referral or prescription for physical therapy. Also wear comfortable clothes you can move in, such as shorts for knee or hip problems or a loose shirt for shoulder or neck problems. Please arrive fifteen minutes early, since the first visit lasts sixty minutes.\n\nIs there anything else I can help you with?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Ừ được rồi, cảm ơn. Uh... cho tôi hỏi, ở phòng khám Alief thì đậu xe ở đâu vậy?",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            "language_detection"
+          ]
+        },
+        {
+          "role": "agent",
+          "message": "Dạ, phòng khám Alief ở địa chỉ mười một nghìn tám trăm đường Bellaire Boulevard, phòng số mười lăm. Chị có thể đậu xe miễn phí ở bãi đậu xe chung với trung tâm mua sắm. Chị còn cần hỏi gì thêm không ạ?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Ờ, bãi đậu xe đó có mất tiền không hay miễn phí vậy?",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": "Dạ, bãi đậu xe ở phòng khám Alief là miễn phí ạ. Đây là bãi đậu xe chung với trung tâm mua sắm. Chị còn câu hỏi nào khác không ạ?",
+          "tools": []
+        },
+        {
+          "role": "user",
+          "message": "Ờ được rồi, miễn phí là tốt rồi. Cảm ơn chị nhé, vậy là đủ rồi.",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": "Dạ, cảm ơn chị Mai đã gọi đến Riverbend Physical Therapy. Chúc chị có buổi khám đầu tiên thật tốt ạ. Tạm biệt chị ạ.",
+          "tools": []
+        },
+        {
+          "role": "agent",
+          "message": null,
+          "tools": [
+            "end_call"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "c02",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 34,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "River Bend Physical Therapy. This call may be recorded. This is Kim speaking.",
+      "start": 0.12,
+      "end": 4.76
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hey, I'm calling about my wife, Laura Simmons. When is her next appointment?",
+      "start": 5.38,
+      "end": 9.9
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Let me look. Laura Simmons. She's with Priya on Tuesday at three fifteen for her shoulder rehab.",
+      "start": 10.92,
+      "end": 16.82
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Okay, great. And does she owe anything?",
+      "start": 17.76,
+      "end": 19.66
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Oh, before I go further, can I get her date of birth?",
+      "start": 20.74,
+      "end": 23.44
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "June tenth, nineteen seventy-nine.",
+      "start": 24.46,
+      "end": 26.58
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks. She has a forty dollar balance from a late cancellation.",
+      "start": 27.64,
+      "end": 31
+    },
+    {
+      "i": 7,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Got it. I'll let her know. Bye.",
+      "start": 32,
+      "end": 33.86
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "fail",
+      "quote": "Let me look. Laura Simmons. She's with Priya on Tuesday at three fifteen for her shoulder rehab.",
+      "turn": 2,
+      "reason": "shared existing-care details before date of birth was verified",
+      "evidence_verified": true
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "1 price(s) quoted, all match policy"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication, doses, or treatment or exercise changes."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff provided the requested appointment and balance information."
+    }
+  },
+  "flags": [
+    {
+      "call": "c02",
+      "item": "identity_before_phi",
+      "quote": "Let me look. Laura Simmons. She's with Priya on Tuesday at three fifteen for her shoulder rehab.",
+      "reason": "shared existing-care details before date of birth was verified",
+      "status": "pending"
+    }
+  ],
+  "unsupported": [],
+  "judge_cost_usd": 0.001136
+}

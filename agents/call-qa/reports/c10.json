@@ -1,0 +1,108 @@
+{
+  "id": "c10",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 27,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks for calling Riverbend Physical Therapy. This call may be recorded. How can I help?",
+      "start": 0.06,
+      "end": 5.12
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hi. I need a copy of my visit notes sent to my surgeon before my follow-up next week.",
+      "start": 6.08,
+      "end": 11.42
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Oh, records requests. I'm not really sure how that works.",
+      "start": 12.48,
+      "end": 16.44
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Is there a form or someone who handles it?",
+      "start": 17.46,
+      "end": 19.66
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "I don't know. Maybe try calling back another day and someone might know.",
+      "start": 20.68,
+      "end": 24.32
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "All right. Thanks, I guess",
+      "start": 25.36,
+      "end": 26.66
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "no existing-care details shared"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not provide medical advice."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not blame or speak rudely to the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "fail",
+      "quote": "I don't know. Maybe try calling back another day and someone might know.",
+      "reason": "Staff did not handle the records request or commit to a specific follow-up.",
+      "evidence_verified": true
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.001551
+}

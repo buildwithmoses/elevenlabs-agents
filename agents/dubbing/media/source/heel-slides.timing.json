@@ -1,0 +1,36 @@
+{
+  "id": "heel-slides",
+  "duration": 19.54,
+  "segments": [
+    {
+      "i": 0,
+      "start": 0,
+      "end": 4.18,
+      "say": "Heel slides. This exercise is for your left knee only."
+    },
+    {
+      "i": 1,
+      "start": 4.18,
+      "end": 11.62,
+      "say": "Lie on your back. Slowly slide your left heel toward you until you feel a gentle stretch. Hold for 3 seconds."
+    },
+    {
+      "i": 2,
+      "start": 11.62,
+      "end": 14.5,
+      "say": "Slide it back out. Do 15 reps."
+    },
+    {
+      "i": 3,
+      "start": 14.5,
+      "end": 16.64,
+      "say": "Do 2 sets, twice a day."
+    },
+    {
+      "i": 4,
+      "start": 16.64,
+      "end": 19.48,
+      "say": "Stop if you feel sharp pain in your knee."
+    }
+  ]
+}

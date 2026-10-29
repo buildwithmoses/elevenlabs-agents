@@ -1,0 +1,115 @@
+{
+  "id": "c20",
+  "variant": "baseline",
+  "language": "spa",
+  "duration_s": 27,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Gracias por llamar a Riverbend Physical Therapy. Esta llamada puede ser grabada. Habla Sofía.",
+      "start": 0.1,
+      "end": 6.06
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hola, quería confirmar mi cita de esta semana.",
+      "start": 6.64,
+      "end": 9.26
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Con gusto. ¿Me da su nombre y fecha de nacimiento?",
+      "start": 9.8,
+      "end": 12.9
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Jorge Ramírez, 20 de noviembre de 1980.",
+      "start": 13.66,
+      "end": 17.32
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Gracias, señor Ramírez. Tiene cita el jueves a las cuatro con Jordan en Pasadena.",
+      "start": 18.02,
+      "end": 22.94
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Perfecto. Gracias.",
+      "start": 23.6,
+      "end": 24.86
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "A usted. Que tenga buen día.",
+      "start": 25.48,
+      "end": 27.08
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "date of birth verified before any existing-care details"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "El personal no dio consejos médicos."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "El personal fue amable y respetuoso."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "El personal confirmó la cita solicitada."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.000966
+}

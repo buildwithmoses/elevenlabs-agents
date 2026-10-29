@@ -1,0 +1,290 @@
+{
+ "key": "bridges.vi",
+ "lang": "vi",
+ "model": "scribe_v1",
+ "language_code": "vie",
+ "language_probability": 1,
+ "text": "Bãi tập năng mông. Nằm ngửa, gập hai chân gối về giật bàn chân sát mặt sàn. Xiết chặt cơ mông rồi nâng hông lên. Giữ trong năm giây. Hả xuống từ từ. Thọc hiện mười lần. Ngừng khi sao chổ lập lại ba hiệp. Động lại nêu bàn thai chân hơi ô long hoắt hông.",
+ "words": [
+  {
+   "text": "Bãi",
+   "start": 0.34,
+   "end": 0.54
+  },
+  {
+   "text": "tập",
+   "start": 0.6,
+   "end": 0.76
+  },
+  {
+   "text": "năng",
+   "start": 0.8,
+   "end": 0.96
+  },
+  {
+   "text": "mông.",
+   "start": 1.04,
+   "end": 1.3
+  },
+  {
+   "text": "Nằm",
+   "start": 1.78,
+   "end": 1.94
+  },
+  {
+   "text": "ngửa,",
+   "start": 2.04,
+   "end": 2.34
+  },
+  {
+   "text": "gập",
+   "start": 2.62,
+   "end": 2.8
+  },
+  {
+   "text": "hai",
+   "start": 2.86,
+   "end": 3
+  },
+  {
+   "text": "chân",
+   "start": 3.08,
+   "end": 3.32
+  },
+  {
+   "text": "gối",
+   "start": 3.42,
+   "end": 3.6
+  },
+  {
+   "text": "về",
+   "start": 3.68,
+   "end": 3.8
+  },
+  {
+   "text": "giật",
+   "start": 3.86,
+   "end": 4.059
+  },
+  {
+   "text": "bàn",
+   "start": 4.14,
+   "end": 4.3
+  },
+  {
+   "text": "chân",
+   "start": 4.36,
+   "end": 4.52
+  },
+  {
+   "text": "sát",
+   "start": 4.62,
+   "end": 4.82
+  },
+  {
+   "text": "mặt",
+   "start": 4.88,
+   "end": 5.02
+  },
+  {
+   "text": "sàn.",
+   "start": 5.06,
+   "end": 5.28
+  },
+  {
+   "text": "Xiết",
+   "start": 5.58,
+   "end": 5.8
+  },
+  {
+   "text": "chặt",
+   "start": 5.84,
+   "end": 6.06
+  },
+  {
+   "text": "cơ",
+   "start": 6.14,
+   "end": 6.26
+  },
+  {
+   "text": "mông",
+   "start": 6.34,
+   "end": 6.52
+  },
+  {
+   "text": "rồi",
+   "start": 6.58,
+   "end": 6.76
+  },
+  {
+   "text": "nâng",
+   "start": 6.84,
+   "end": 6.96
+  },
+  {
+   "text": "hông",
+   "start": 7.04,
+   "end": 7.22
+  },
+  {
+   "text": "lên.",
+   "start": 7.3,
+   "end": 7.54
+  },
+  {
+   "text": "Giữ",
+   "start": 7.94,
+   "end": 8.16
+  },
+  {
+   "text": "trong",
+   "start": 8.22,
+   "end": 8.44
+  },
+  {
+   "text": "năm",
+   "start": 8.5,
+   "end": 8.62
+  },
+  {
+   "text": "giây.",
+   "start": 8.7,
+   "end": 9
+  },
+  {
+   "text": "Hả",
+   "start": 9.4,
+   "end": 9.5
+  },
+  {
+   "text": "xuống",
+   "start": 9.62,
+   "end": 9.82
+  },
+  {
+   "text": "từ",
+   "start": 9.88,
+   "end": 9.98
+  },
+  {
+   "text": "từ.",
+   "start": 10.02,
+   "end": 10.22
+  },
+  {
+   "text": "Thọc",
+   "start": 10.76,
+   "end": 10.98
+  },
+  {
+   "text": "hiện",
+   "start": 11.04,
+   "end": 11.26
+  },
+  {
+   "text": "mười",
+   "start": 11.32,
+   "end": 11.52
+  },
+  {
+   "text": "lần.",
+   "start": 11.6,
+   "end": 11.82
+  },
+  {
+   "text": "Ngừng",
+   "start": 12.3,
+   "end": 12.48
+  },
+  {
+   "text": "khi",
+   "start": 12.52,
+   "end": 12.74
+  },
+  {
+   "text": "sao",
+   "start": 12.94,
+   "end": 13.1
+  },
+  {
+   "text": "chổ",
+   "start": 13.16,
+   "end": 13.32
+  },
+  {
+   "text": "lập",
+   "start": 13.36,
+   "end": 13.5
+  },
+  {
+   "text": "lại",
+   "start": 13.56,
+   "end": 13.72
+  },
+  {
+   "text": "ba",
+   "start": 13.76,
+   "end": 13.86
+  },
+  {
+   "text": "hiệp.",
+   "start": 13.9,
+   "end": 14.18
+  },
+  {
+   "text": "Động",
+   "start": 14.6,
+   "end": 14.78
+  },
+  {
+   "text": "lại",
+   "start": 14.84,
+   "end": 15.02
+  },
+  {
+   "text": "nêu",
+   "start": 15.06,
+   "end": 15.22
+  },
+  {
+   "text": "bàn",
+   "start": 15.26,
+   "end": 15.44
+  },
+  {
+   "text": "thai",
+   "start": 15.46,
+   "end": 15.68
+  },
+  {
+   "text": "chân",
+   "start": 15.76,
+   "end": 16.079
+  },
+  {
+   "text": "hơi",
+   "start": 16.14,
+   "end": 16.4
+  },
+  {
+   "text": "ô",
+   "start": 16.46,
+   "end": 16.52
+  },
+  {
+   "text": "long",
+   "start": 16.56,
+   "end": 16.72
+  },
+  {
+   "text": "hoắt",
+   "start": 16.76,
+   "end": 17
+  },
+  {
+   "text": "hông.",
+   "start": 17.06,
+   "end": 17.32
+  }
+ ]
+}

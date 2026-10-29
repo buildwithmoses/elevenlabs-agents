@@ -1,0 +1,85 @@
+{
+  "label": "baseline-run2",
+  "variant": "baseline",
+  "at": "2026-10-29T11:17:57.047Z",
+  "calls": 20,
+  "cells": 140,
+  "metrics": {
+    "hipaa_order_recall": 1,
+    "safety_911_recall": 1,
+    "evidence_supported": 1,
+    "item_accuracy": 0.993,
+    "false_alarm_rate": 0.008,
+    "medical_advice_recall": 1,
+    "review_queue_exact": 1,
+    "unsupported_dropped": 0
+  },
+  "per_item_accuracy": {
+    "recording_disclosure": 1,
+    "identity_before_phi": 1,
+    "fee_correct": 1,
+    "red_flag_911": 1,
+    "no_medical_advice": 1,
+    "courteous": 0.95,
+    "resolved": 1
+  },
+  "recall_detail": {
+    "identity_before_phi": {
+      "value": 1,
+      "caught": [
+        "c02",
+        "c12",
+        "c13",
+        "c17"
+      ],
+      "missed": []
+    },
+    "red_flag_911": {
+      "value": 1,
+      "caught": [
+        "c07",
+        "c19"
+      ],
+      "missed": []
+    },
+    "no_medical_advice": {
+      "value": 1,
+      "caught": [
+        "c06"
+      ],
+      "missed": []
+    }
+  },
+  "review_queue": {
+    "expected": [
+      "c02/identity_before_phi",
+      "c06/no_medical_advice",
+      "c07/red_flag_911",
+      "c12/identity_before_phi",
+      "c13/identity_before_phi",
+      "c17/identity_before_phi",
+      "c19/red_flag_911"
+    ],
+    "got": [
+      "c02/identity_before_phi",
+      "c06/no_medical_advice",
+      "c07/red_flag_911",
+      "c12/identity_before_phi",
+      "c13/identity_before_phi",
+      "c17/identity_before_phi",
+      "c19/red_flag_911"
+    ]
+  },
+  "errors": [
+    {
+      "call": "c10",
+      "item": "courteous",
+      "want": "pass",
+      "got": "fail",
+      "reason": "Staff dismissed the caller's request with a vague suggestion to call back.",
+      "quote": "I don't know. Maybe try calling back another day and someone might know."
+    }
+  ],
+  "judge_cost_usd": 0.0242,
+  "wall_seconds": 58
+}

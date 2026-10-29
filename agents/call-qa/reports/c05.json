@@ -1,0 +1,131 @@
+{
+  "id": "c05",
+  "variant": "baseline",
+  "language": "spa",
+  "duration_s": 48,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Gracias por llamar a Riverbend Physical Therapy. Esta llamada puede ser grabada. ¿En qué le puedo ayudar?",
+      "start": 0.06,
+      "end": 6.04
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hola, necesito cancelar mi cita de mañana.",
+      "start": 6.72,
+      "end": 9.48
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Claro. ¿Me da su nombre completo y su fecha de nacimiento?",
+      "start": 10.06,
+      "end": 13.28
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Rosa Martínez, el 15 de agosto de 1970.",
+      "start": 14.26,
+      "end": 18.06
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Gracias, señora Martínez. Veo su cita de mañana a las diez. Como faltan menos de veinticuatro horas, hay un cargo de cuarenta dólares, pero se lo podemos perdonar una vez al año.",
+      "start": 18.98,
+      "end": 29.9
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Ay, gracias. Sí, por favor, cancélela.",
+      "start": 30.64,
+      "end": 33.24
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Listo. Está cancelada y no se le cobrará el cargo. ¿Quiere reprogramar?",
+      "start": 34.16,
+      "end": 38.74
+    },
+    {
+      "i": 7,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Sí, para la próxima semana, el martes.",
+      "start": 39.68,
+      "end": 41.74
+    },
+    {
+      "i": 8,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Tengo el martes a las once. Queda apuntada. Le enviaremos un mensaje de confirmación.",
+      "start": 42.6,
+      "end": 47.66
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "date of birth verified before any existing-care details"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "1 price(s) quoted, all match policy"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication or changes to treatment or exercises."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff canceled the appointment, waived the fee, and booked the requested new appointment."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.001422
+}

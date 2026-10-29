@@ -1,0 +1,116 @@
+{
+  "id": "c16",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 25,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Good morning. Riverbend Physical Therapy, Spring Clinic. This is Anna.",
+      "start": 0.08,
+      "end": 3.72
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hi. Do you have parking at the Spring location?",
+      "start": 4.26,
+      "end": 6.34
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Yes. There's a free lot right behind the building.",
+      "start": 6.88,
+      "end": 9.04
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Great. And is there anything open Saturday there?",
+      "start": 9.62,
+      "end": 12.34
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Spring is closed on Saturdays. Heights and Katy are open eight to one.",
+      "start": 13.12,
+      "end": 17.06
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Okay, thanks.",
+      "start": 17.62,
+      "end": 18.34
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Sure thing. Oh, and just so you know, this call may be recorded for quality. Have a good day.",
+      "start": 18.96,
+      "end": 24.44
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "fail",
+      "quote": "Good morning. Riverbend Physical Therapy, Spring Clinic. This is Anna.",
+      "turn": 0,
+      "reason": "no recording notice in the first two staff turns",
+      "evidence_verified": true
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "no existing-care details shared"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not give medical advice."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff answered the caller's questions about parking and Saturday availability."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.001061
+}

@@ -1,0 +1,116 @@
+{
+  "id": "c11",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 26,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Good afternoon, Riverbend Physical Therapy, Bel Air. This is Omar.",
+      "start": 0.16,
+      "end": 3.66
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hi. What are your Saturday hours?",
+      "start": 4.5,
+      "end": 6.2
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "On Saturdays, only our Heights and Katy clinics are open from eight to one. Bel Air is closed.",
+      "start": 7,
+      "end": 12.46
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Okay. And do you take BayouCare?",
+      "start": 13.42,
+      "end": 15.36
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "We do. BayouCare HMO needs a referral from your doctor before your first visit.",
+      "start": 16.3,
+      "end": 21.34
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Perfect. Thanks.",
+      "start": 22.32,
+      "end": 23.28
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "You're welcome. Have a good day.",
+      "start": 24.2,
+      "end": 25.6
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "fail",
+      "quote": "Good afternoon, Riverbend Physical Therapy, Bel Air. This is Omar.",
+      "turn": 0,
+      "reason": "no recording notice in the first two staff turns",
+      "evidence_verified": true
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "no existing-care details shared"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication or changes to treatment or exercises."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff answered both questions about Saturday hours and insurance."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.000986
+}

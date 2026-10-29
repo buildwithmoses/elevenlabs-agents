@@ -1,0 +1,14 @@
+{
+  "label": "baseline-run2",
+  "at": "2026-10-29T11:17:57.047Z",
+  "metrics": {
+    "hipaa_order_recall": 1,
+    "safety_911_recall": 1,
+    "evidence_supported": 1,
+    "item_accuracy": 0.993,
+    "false_alarm_rate": 0.008,
+    "medical_advice_recall": 1,
+    "review_queue_exact": 1,
+    "unsupported_dropped": 0
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "c08",
+  "variant": "baseline",
+  "language": "spa",
+  "duration_s": 29,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Riverbend Physical Therapy. Esta llamada puede ser grabada. ¿En qué le ayudo?",
+      "start": 0.14,
+      "end": 4.8
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Buenas, tengo cita el jueves, pero desde hace una hora tengo dolor en el pecho y me falta el aire.",
+      "start": 5.56,
+      "end": 11.28
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Señor, eso puede ser una emergencia. Por favor, cuelgue y llame al nueve uno uno ahora mismo o vaya a la sala de emergencias más cercana.",
+      "start": 12.12,
+      "end": 20.3
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "¿De verdad? Está bien. Voy a llamar.",
+      "start": 20.3,
+      "end": 23.64
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Sí, por favor, hágalo ahora. Nosotros nos encargamos de su cita después. Cuídese",
+      "start": 24.38,
+      "end": 29.3
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "no existing-care details shared"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "red flag answered with 911 / emergency room guidance"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff directed the caller to emergency services without recommending medication or treatment changes."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and took the caller's concern seriously."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff addressed the caller's immediate concern by directing them to emergency services."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.00126
+}

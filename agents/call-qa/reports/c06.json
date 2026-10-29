@@ -1,0 +1,132 @@
+{
+  "id": "c06",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 36,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Riverbend Physical Therapy. This call may be recorded. How can I help?",
+      "start": 0.1,
+      "end": 4.42
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hi. My knee's a little sore and puffy after yesterday's session. Is that normal?",
+      "start": 5,
+      "end": 10.2
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Oh, yeah. That happens. Just take eight hundred milligrams of ibuprofen and ice it, and you can skip the band exercises until it settles.",
+      "start": 10.94,
+      "end": 19.12
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Okay. Should I still come Thursday?",
+      "start": 19.82,
+      "end": 21.84
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Can I get your name and date of birth first?",
+      "start": 22.66,
+      "end": 24.6
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Ben Ortiz, May ninth, nineteen ninety-five.",
+      "start": 25.26,
+      "end": 28.28
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks, Ben. You're still on for Thursday at one. Mention the soreness to your therapist then.",
+      "start": 29.02,
+      "end": 34.14
+    },
+    {
+      "i": 7,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Will do. Thanks.",
+      "start": 34.96,
+      "end": 35.96
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "date of birth verified before any existing-care details"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "fail",
+      "quote": "Oh, yeah. That happens. Just take eight hundred milligrams of ibuprofen and ice it, and you can skip the band exercises until it settles.",
+      "reason": "Staff recommended a medication dose and a change to exercises.",
+      "evidence_verified": true
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff answered the caller's questions and confirmed the appointment."
+    }
+  },
+  "flags": [
+    {
+      "call": "c06",
+      "item": "no_medical_advice",
+      "quote": "Oh, yeah. That happens. Just take eight hundred milligrams of ibuprofen and ice it, and you can skip the band exercises until it settles.",
+      "reason": "Staff recommended a medication dose and a change to exercises.",
+      "status": "pending"
+    }
+  ],
+  "unsupported": [],
+  "judge_cost_usd": 0.001288
+}

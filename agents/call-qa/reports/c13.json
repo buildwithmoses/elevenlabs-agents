@@ -1,0 +1,124 @@
+{
+  "id": "c13",
+  "variant": "baseline",
+  "language": "spa",
+  "duration_s": 27,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Riverbend Physical Therapy. Esta llamada puede ser grabada. Habla Lucía.",
+      "start": 0.08,
+      "end": 4.48
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hola. Llamo por mi mamá, Carmen Vega. ¿A qué hora es su terapia esta semana?",
+      "start": 5.1,
+      "end": 9.46
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Carmen Vega. Sí, tiene cita el miércoles a las nueve con Sam para la rodilla.",
+      "start": 10.08,
+      "end": 14.84
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Ah, perfecto. ¿Y el viernes también?",
+      "start": 15.42,
+      "end": 17.58
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Permítame, ¿me da su fecha de nacimiento?",
+      "start": 18.26,
+      "end": 20.36
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "3 de marzo de 1958.",
+      "start": 21.22,
+      "end": 23.48
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Gracias. No, solo tiene la del miércoles.",
+      "start": 24.12,
+      "end": 27.08
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "fail",
+      "quote": "Carmen Vega. Sí, tiene cita el miércoles a las nueve con Sam para la rodilla.",
+      "turn": 2,
+      "reason": "shared existing-care details before date of birth was verified",
+      "evidence_verified": true
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication, doses, or changes to treatment or exercises."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff provided the requested appointment information."
+    }
+  },
+  "flags": [
+    {
+      "call": "c13",
+      "item": "identity_before_phi",
+      "quote": "Carmen Vega. Sí, tiene cita el miércoles a las nueve con Sam para la rodilla.",
+      "reason": "shared existing-care details before date of birth was verified",
+      "status": "pending"
+    }
+  ],
+  "unsupported": [],
+  "judge_cost_usd": 0.001285
+}

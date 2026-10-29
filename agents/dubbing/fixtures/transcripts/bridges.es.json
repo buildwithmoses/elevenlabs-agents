@@ -1,0 +1,195 @@
+{
+ "key": "bridges.es",
+ "lang": "es",
+ "model": "scribe_v1",
+ "language_code": "spa",
+ "language_probability": 1,
+ "text": "Puente de glúteo. Túmbate boca arriba, rodillas flexionadas, pies en el suelo. Aprieta glúteos, eleva cadera. Mantén cinco segundos. Baja lento. Haz diez repeticiones. Descansa. Repite tres series. Para si sientes dolor agudo en espalda o cadera.",
+ "words": [
+  {
+   "text": "Puente",
+   "start": 0.18,
+   "end": 0.44
+  },
+  {
+   "text": "de",
+   "start": 0.48,
+   "end": 0.52
+  },
+  {
+   "text": "glúteo.",
+   "start": 0.56,
+   "end": 0.98
+  },
+  {
+   "text": "Túmbate",
+   "start": 1.4,
+   "end": 1.76
+  },
+  {
+   "text": "boca",
+   "start": 1.86,
+   "end": 2.08
+  },
+  {
+   "text": "arriba,",
+   "start": 2.12,
+   "end": 2.48
+  },
+  {
+   "text": "rodillas",
+   "start": 2.84,
+   "end": 3.22
+  },
+  {
+   "text": "flexionadas,",
+   "start": 3.28,
+   "end": 3.96
+  },
+  {
+   "text": "pies",
+   "start": 4.22,
+   "end": 4.44
+  },
+  {
+   "text": "en",
+   "start": 4.48,
+   "end": 4.54
+  },
+  {
+   "text": "el",
+   "start": 4.58,
+   "end": 4.66
+  },
+  {
+   "text": "suelo.",
+   "start": 4.7,
+   "end": 5
+  },
+  {
+   "text": "Aprieta",
+   "start": 5.34,
+   "end": 5.68
+  },
+  {
+   "text": "glúteos,",
+   "start": 5.76,
+   "end": 6.22
+  },
+  {
+   "text": "eleva",
+   "start": 6.52,
+   "end": 6.76
+  },
+  {
+   "text": "cadera.",
+   "start": 6.82,
+   "end": 7.18
+  },
+  {
+   "text": "Mantén",
+   "start": 7.6,
+   "end": 7.96
+  },
+  {
+   "text": "cinco",
+   "start": 8.14,
+   "end": 8.38
+  },
+  {
+   "text": "segundos.",
+   "start": 8.46,
+   "end": 8.94
+  },
+  {
+   "text": "Baja",
+   "start": 9.34,
+   "end": 9.6
+  },
+  {
+   "text": "lento.",
+   "start": 9.68,
+   "end": 10.04
+  },
+  {
+   "text": "Haz",
+   "start": 10.4,
+   "end": 10.6
+  },
+  {
+   "text": "diez",
+   "start": 10.76,
+   "end": 11.02
+  },
+  {
+   "text": "repeticiones.",
+   "start": 11.08,
+   "end": 11.84
+  },
+  {
+   "text": "Descansa.",
+   "start": 12.24,
+   "end": 12.82
+  },
+  {
+   "text": "Repite",
+   "start": 13.1,
+   "end": 13.46
+  },
+  {
+   "text": "tres",
+   "start": 13.5,
+   "end": 13.72
+  },
+  {
+   "text": "series.",
+   "start": 13.88,
+   "end": 14.3
+  },
+  {
+   "text": "Para",
+   "start": 14.66,
+   "end": 14.86
+  },
+  {
+   "text": "si",
+   "start": 14.92,
+   "end": 14.98
+  },
+  {
+   "text": "sientes",
+   "start": 15.06,
+   "end": 15.38
+  },
+  {
+   "text": "dolor",
+   "start": 15.44,
+   "end": 15.7
+  },
+  {
+   "text": "agudo",
+   "start": 15.76,
+   "end": 16.079
+  },
+  {
+   "text": "en",
+   "start": 16.12,
+   "end": 16.18
+  },
+  {
+   "text": "espalda",
+   "start": 16.219,
+   "end": 16.8
+  },
+  {
+   "text": "o",
+   "start": 16.84,
+   "end": 16.86
+  },
+  {
+   "text": "cadera.",
+   "start": 16.94,
+   "end": 17.3
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+[
+  {
+    "type": "webhook",
+    "name": "verify_identity",
+    "description": "Check the date of birth before saying anything about the visit. Returns the visit details only if it matches.",
+    "response_timeout_secs": 20,
+    "api_schema": {
+      "url": "https://{{system__env_elagents_tools_host}}/reminder-caller/verify_identity",
+      "method": "POST",
+      "request_headers": {
+        "X-Tools-Secret": {
+          "env_var_label": "elagents_tools_secret"
+        }
+      },
+      "request_body_schema": {
+        "type": "object",
+        "properties": {
+          "appointment_id": {
+            "type": "string",
+            "description": "The appointment id from the call, e.g. A101"
+          },
+          "date_of_birth": {
+            "type": "string",
+            "description": "Date of birth the person said, as YYYY-MM-DD"
+          }
+        },
+        "required": [
+          "appointment_id",
+          "date_of_birth"
+        ],
+        "description": "verify_identity input"
+      }
+    }
+  },
+  {
+    "type": "webhook",
+    "name": "confirm_appointment",
+    "description": "Mark the visit confirmed after a verified patient says they can make it.",
+    "response_timeout_secs": 20,
+    "api_schema": {
+      "url": "https://{{system__env_elagents_tools_host}}/reminder-caller/confirm_appointment",
+      "method": "POST",
+      "request_headers": {
+        "X-Tools-Secret": {
+          "env_var_label": "elagents_tools_secret"
+        }
+      },
+      "request_body_schema": {
+        "type": "object",
+        "properties": {
+          "appointment_id": {
+            "type": "string",
+            "description": "The appointment id from the call, e.g. A101"
+          }
+        },
+        "required": [
+          "appointment_id"
+        ],
+        "description": "confirm_appointment input"
+      }
+    }
+  },
+  {
+    "type": "webhook",
+    "name": "get_open_slots",
+    "description": "List open times at the same clinic for a verified patient who wants to reschedule. Offer only these.",
+    "response_timeout_secs": 20,
+    "api_schema": {
+      "url": "https://{{system__env_elagents_tools_host}}/reminder-caller/get_open_slots",
+      "method": "POST",
+      "request_headers": {
+        "X-Tools-Secret": {
+          "env_var_label": "elagents_tools_secret"
+        }
+      },
+      "request_body_schema": {
+        "type": "object",
+        "properties": {
+          "appointment_id": {
+            "type": "string",
+            "description": "The appointment id from the call, e.g. A101"
+          },
+          "preferred_day": {
+            "type": "string",
+            "description": "Weekday the patient prefers, e.g. Thursday. Empty if none."
+          }
+        },
+        "required": [
+          "appointment_id"
+        ],
+        "description": "get_open_slots input"
+      }
+    }
+  },
+  {
+    "type": "webhook",
+    "name": "reschedule_appointment",
+    "description": "Move a verified patient to a slot_id returned by get_open_slots.",
+    "response_timeout_secs": 20,
+    "api_schema": {
+      "url": "https://{{system__env_elagents_tools_host}}/reminder-caller/reschedule_appointment",
+      "method": "POST",
+      "request_headers": {
+        "X-Tools-Secret": {
+          "env_var_label": "elagents_tools_secret"
+        }
+      },
+      "request_body_schema": {
+        "type": "object",
+        "properties": {
+          "appointment_id": {
+            "type": "string",
+            "description": "The appointment id from the call, e.g. A101"
+          },
+          "slot_id": {
+            "type": "string",
+            "description": "slot_id from get_open_slots"
+          }
+        },
+        "required": [
+          "appointment_id",
+          "slot_id"
+        ],
+        "description": "reschedule_appointment input"
+      }
+    }
+  },
+  {
+    "type": "webhook",
+    "name": "cancel_appointment",
+    "description": "Cancel a verified patient's visit. Returns the fee text to read word for word.",
+    "response_timeout_secs": 20,
+    "api_schema": {
+      "url": "https://{{system__env_elagents_tools_host}}/reminder-caller/cancel_appointment",
+      "method": "POST",
+      "request_headers": {
+        "X-Tools-Secret": {
+          "env_var_label": "elagents_tools_secret"
+        }
+      },
+      "request_body_schema": {
+        "type": "object",
+        "properties": {
+          "appointment_id": {
+            "type": "string",
+            "description": "The appointment id from the call, e.g. A101"
+          },
+          "reason": {
+            "type": "string",
+            "description": "Short reason the patient gave, or empty"
+          }
+        },
+        "required": [
+          "appointment_id"
+        ],
+        "description": "cancel_appointment input"
+      }
+    }
+  }
+]

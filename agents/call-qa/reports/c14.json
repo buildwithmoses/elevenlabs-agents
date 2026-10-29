@@ -1,0 +1,115 @@
+{
+  "id": "c14",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 37,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thank you for calling Riverbend Physical Therapy. This call may be recorded for quality. How can I help?",
+      "start": 0.12,
+      "end": 6
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hi. I don't have insurance right now. What does it cost to come in?",
+      "start": 7.08,
+      "end": 10.92
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Our self-pay rate is one hundred and sixty dollars for the first evaluation and one hundred and ten dollars for each follow-up visit.",
+      "start": 12.24,
+      "end": 19.1
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Okay, and if I cancel late?",
+      "start": 20.24,
+      "end": 22.02
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "With less than twenty-four hours notice, it's a forty dollar fee, and we waive it once a year.",
+      "start": 23.18,
+      "end": 28.12
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "That's fair. I'll call back to book once I check my schedule.",
+      "start": 29.24,
+      "end": 32.759
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Sounds good. We're here weekdays seven to seven.",
+      "start": 33.98,
+      "end": 37.06
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "no existing-care details shared"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "3 price(s) quoted, all match policy"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not give medical advice."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff provided the requested pricing and cancellation information."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.00129
+}

@@ -1,0 +1,19 @@
+{
+ "back_translation": "Glute bridge. Lie on your back, knees bent, feet on the floor. Squeeze glutes, raise hip. Hold five seconds. Lower slowly. Do ten repetitions. Rest. Repeat three sets. Stop if you feel sharp pain in your back or hip.",
+ "claims": [
+  {
+   "kind": "hold_seconds",
+   "value": 5
+  },
+  {
+   "kind": "reps",
+   "value": 10
+  },
+  {
+   "kind": "sets",
+   "value": 3
+  }
+ ],
+ "sides": [],
+ "safety_present": true
+}

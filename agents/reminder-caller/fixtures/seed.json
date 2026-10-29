@@ -1,0 +1,935 @@
+{
+ "now": "2026-11-02T17:00:00-06:00",
+ "clinic_callback": "713-555-0100",
+ "patients": [
+  {
+   "patient_id": "P101",
+   "first_name": "James",
+   "last_name": "Carter",
+   "dob": "1975-06-02",
+   "phone": "+17135550101",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P102",
+   "first_name": "Linda",
+   "last_name": "Park",
+   "dob": "1990-11-23",
+   "phone": "+12815550102",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P103",
+   "first_name": "Robert",
+   "last_name": "Hughes",
+   "dob": "1962-01-15",
+   "phone": "+17135550103",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P104",
+   "first_name": "Angela",
+   "last_name": "Brooks",
+   "dob": "1988-07-30",
+   "phone": "+17135550104",
+   "waiver_used_year": 2026,
+   "language": "en"
+  },
+  {
+   "patient_id": "P105",
+   "first_name": "Miguel",
+   "last_name": "Torres",
+   "dob": "1979-09-04",
+   "phone": "+12815550105",
+   "waiver_used_year": null,
+   "language": "es"
+  },
+  {
+   "patient_id": "P106",
+   "first_name": "Kevin",
+   "last_name": "Doyle",
+   "dob": "1958-12-01",
+   "phone": "+17135550106",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P107",
+   "first_name": "Sarah",
+   "last_name": "Lin",
+   "dob": "1994-02-18",
+   "phone": "+12815550107",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P108",
+   "first_name": "Thomas",
+   "last_name": "Reed",
+   "dob": "1970-05-21",
+   "phone": "+17135550108",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P109",
+   "first_name": "Grace",
+   "last_name": "Kim",
+   "dob": "1983-08-08",
+   "phone": "+12815550109",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P110",
+   "first_name": "Daniel",
+   "last_name": "Ruiz",
+   "dob": "1966-10-10",
+   "phone": "+17135550110",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P111",
+   "first_name": "Olivia",
+   "last_name": "Bennett",
+   "dob": "1992-04-04",
+   "phone": "+17135550111",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P112",
+   "first_name": "Hector",
+   "last_name": "Alvarez",
+   "dob": "1981-01-30",
+   "phone": "+12815550112",
+   "waiver_used_year": null,
+   "language": "es"
+  },
+  {
+   "patient_id": "P113",
+   "first_name": "Patricia",
+   "last_name": "Moore",
+   "dob": "1955-03-03",
+   "phone": "+17135550113",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P114",
+   "first_name": "Nathan",
+   "last_name": "Cole",
+   "dob": "1987-09-19",
+   "phone": "+12815550114",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P115",
+   "first_name": "Rachel",
+   "last_name": "Adams",
+   "dob": "1973-12-12",
+   "phone": "+12815550115",
+   "waiver_used_year": null,
+   "language": "en"
+  },
+  {
+   "patient_id": "P116",
+   "first_name": "Mark",
+   "last_name": "Bennett",
+   "dob": "1990-02-02",
+   "phone": "+17135550116",
+   "waiver_used_year": null,
+   "language": "en"
+  }
+ ],
+ "appointments": [
+  {
+   "appointment_id": "A101",
+   "patient_id": "P101",
+   "clinic": "Heights",
+   "start": "2026-11-03T09:00:00-06:00",
+   "local_time": "09:00",
+   "therapist": "Priya Nair",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A102",
+   "patient_id": "P102",
+   "clinic": "Katy",
+   "start": "2026-11-03T18:00:00-06:00",
+   "local_time": "18:00",
+   "therapist": "Tom Walsh",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A103",
+   "patient_id": "P103",
+   "clinic": "Bellaire",
+   "start": "2026-11-03T10:30:00-06:00",
+   "local_time": "10:30",
+   "therapist": "Daniel Price",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A104",
+   "patient_id": "P104",
+   "clinic": "Bellaire",
+   "start": "2026-11-03T11:15:00-06:00",
+   "local_time": "11:15",
+   "therapist": "Daniel Price",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A105",
+   "patient_id": "P105",
+   "clinic": "Alief",
+   "start": "2026-11-03T14:00:00-06:00",
+   "local_time": "14:00",
+   "therapist": "Minh Tran",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A106",
+   "patient_id": "P106",
+   "clinic": "Pasadena",
+   "start": "2026-11-03T13:00:00-06:00",
+   "local_time": "13:00",
+   "therapist": "Aisha Grant",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A107",
+   "patient_id": "P107",
+   "clinic": "Spring",
+   "start": "2026-11-03T16:30:00-06:00",
+   "local_time": "16:30",
+   "therapist": "Sofia Mendez",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A108",
+   "patient_id": "P108",
+   "clinic": "Heights",
+   "start": "2026-11-03T17:15:00-06:00",
+   "local_time": "17:15",
+   "therapist": "Priya Nair",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A109",
+   "patient_id": "P109",
+   "clinic": "Katy",
+   "start": "2026-11-03T12:00:00-06:00",
+   "local_time": "12:00",
+   "therapist": "Tom Walsh",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A110",
+   "patient_id": "P110",
+   "clinic": "Bellaire",
+   "start": "2026-11-03T15:00:00-06:00",
+   "local_time": "15:00",
+   "therapist": "Daniel Price",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A111",
+   "patient_id": "P111",
+   "clinic": "Heights",
+   "start": "2026-11-03T09:45:00-06:00",
+   "local_time": "09:45",
+   "therapist": "Priya Nair",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A112",
+   "patient_id": "P112",
+   "clinic": "Alief",
+   "start": "2026-11-03T08:30:00-06:00",
+   "local_time": "08:30",
+   "therapist": "Minh Tran",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A113",
+   "patient_id": "P113",
+   "clinic": "Pasadena",
+   "start": "2026-11-03T10:00:00-06:00",
+   "local_time": "10:00",
+   "therapist": "Aisha Grant",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A114",
+   "patient_id": "P114",
+   "clinic": "Spring",
+   "start": "2026-11-03T14:45:00-06:00",
+   "local_time": "14:45",
+   "therapist": "Sofia Mendez",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A115",
+   "patient_id": "P115",
+   "clinic": "Katy",
+   "start": "2026-11-03T07:30:00-06:00",
+   "local_time": "07:30",
+   "therapist": "Tom Walsh",
+   "visit": "follow-up",
+   "status": "booked"
+  },
+  {
+   "appointment_id": "A116",
+   "patient_id": "P116",
+   "clinic": "Heights",
+   "start": "2026-11-03T10:15:00-06:00",
+   "local_time": "10:15",
+   "therapist": "Priya Nair",
+   "visit": "follow-up",
+   "status": "booked"
+  }
+ ],
+ "slots": [
+  {
+   "slot_id": "S-HEI-1104-0800",
+   "clinic": "Heights",
+   "therapist": "Priya Nair",
+   "start": "2026-11-04T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-HEI-1104-1100",
+   "clinic": "Heights",
+   "therapist": "Priya Nair",
+   "start": "2026-11-04T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-HEI-1104-1530",
+   "clinic": "Heights",
+   "therapist": "Priya Nair",
+   "start": "2026-11-04T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-HEI-1105-0800",
+   "clinic": "Heights",
+   "therapist": "Priya Nair",
+   "start": "2026-11-05T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-HEI-1105-1100",
+   "clinic": "Heights",
+   "therapist": "Priya Nair",
+   "start": "2026-11-05T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-HEI-1105-1530",
+   "clinic": "Heights",
+   "therapist": "Priya Nair",
+   "start": "2026-11-05T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-HEI-1106-0800",
+   "clinic": "Heights",
+   "therapist": "Priya Nair",
+   "start": "2026-11-06T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-HEI-1106-1100",
+   "clinic": "Heights",
+   "therapist": "Priya Nair",
+   "start": "2026-11-06T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-HEI-1106-1530",
+   "clinic": "Heights",
+   "therapist": "Priya Nair",
+   "start": "2026-11-06T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-KAT-1104-0800",
+   "clinic": "Katy",
+   "therapist": "Tom Walsh",
+   "start": "2026-11-04T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-KAT-1104-1100",
+   "clinic": "Katy",
+   "therapist": "Tom Walsh",
+   "start": "2026-11-04T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-KAT-1104-1530",
+   "clinic": "Katy",
+   "therapist": "Tom Walsh",
+   "start": "2026-11-04T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-KAT-1105-0800",
+   "clinic": "Katy",
+   "therapist": "Tom Walsh",
+   "start": "2026-11-05T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-KAT-1105-1100",
+   "clinic": "Katy",
+   "therapist": "Tom Walsh",
+   "start": "2026-11-05T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-KAT-1105-1530",
+   "clinic": "Katy",
+   "therapist": "Tom Walsh",
+   "start": "2026-11-05T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-KAT-1106-0800",
+   "clinic": "Katy",
+   "therapist": "Tom Walsh",
+   "start": "2026-11-06T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-KAT-1106-1100",
+   "clinic": "Katy",
+   "therapist": "Tom Walsh",
+   "start": "2026-11-06T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-KAT-1106-1530",
+   "clinic": "Katy",
+   "therapist": "Tom Walsh",
+   "start": "2026-11-06T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-BEL-1104-0800",
+   "clinic": "Bellaire",
+   "therapist": "Daniel Price",
+   "start": "2026-11-04T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-BEL-1104-1100",
+   "clinic": "Bellaire",
+   "therapist": "Daniel Price",
+   "start": "2026-11-04T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-BEL-1104-1530",
+   "clinic": "Bellaire",
+   "therapist": "Daniel Price",
+   "start": "2026-11-04T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-BEL-1105-0800",
+   "clinic": "Bellaire",
+   "therapist": "Daniel Price",
+   "start": "2026-11-05T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-BEL-1105-1100",
+   "clinic": "Bellaire",
+   "therapist": "Daniel Price",
+   "start": "2026-11-05T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-BEL-1105-1530",
+   "clinic": "Bellaire",
+   "therapist": "Daniel Price",
+   "start": "2026-11-05T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-BEL-1106-0800",
+   "clinic": "Bellaire",
+   "therapist": "Daniel Price",
+   "start": "2026-11-06T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-BEL-1106-1100",
+   "clinic": "Bellaire",
+   "therapist": "Daniel Price",
+   "start": "2026-11-06T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-BEL-1106-1530",
+   "clinic": "Bellaire",
+   "therapist": "Daniel Price",
+   "start": "2026-11-06T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-ALI-1104-0800",
+   "clinic": "Alief",
+   "therapist": "Minh Tran",
+   "start": "2026-11-04T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-ALI-1104-1100",
+   "clinic": "Alief",
+   "therapist": "Minh Tran",
+   "start": "2026-11-04T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-ALI-1104-1530",
+   "clinic": "Alief",
+   "therapist": "Minh Tran",
+   "start": "2026-11-04T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-ALI-1105-0800",
+   "clinic": "Alief",
+   "therapist": "Minh Tran",
+   "start": "2026-11-05T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-ALI-1105-1100",
+   "clinic": "Alief",
+   "therapist": "Minh Tran",
+   "start": "2026-11-05T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-ALI-1105-1530",
+   "clinic": "Alief",
+   "therapist": "Minh Tran",
+   "start": "2026-11-05T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-ALI-1106-0800",
+   "clinic": "Alief",
+   "therapist": "Minh Tran",
+   "start": "2026-11-06T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-ALI-1106-1100",
+   "clinic": "Alief",
+   "therapist": "Minh Tran",
+   "start": "2026-11-06T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-ALI-1106-1530",
+   "clinic": "Alief",
+   "therapist": "Minh Tran",
+   "start": "2026-11-06T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-PAS-1104-0800",
+   "clinic": "Pasadena",
+   "therapist": "Aisha Grant",
+   "start": "2026-11-04T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-PAS-1104-1100",
+   "clinic": "Pasadena",
+   "therapist": "Aisha Grant",
+   "start": "2026-11-04T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-PAS-1104-1530",
+   "clinic": "Pasadena",
+   "therapist": "Aisha Grant",
+   "start": "2026-11-04T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-PAS-1105-0800",
+   "clinic": "Pasadena",
+   "therapist": "Aisha Grant",
+   "start": "2026-11-05T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-PAS-1105-1100",
+   "clinic": "Pasadena",
+   "therapist": "Aisha Grant",
+   "start": "2026-11-05T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-PAS-1105-1530",
+   "clinic": "Pasadena",
+   "therapist": "Aisha Grant",
+   "start": "2026-11-05T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-PAS-1106-0800",
+   "clinic": "Pasadena",
+   "therapist": "Aisha Grant",
+   "start": "2026-11-06T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-PAS-1106-1100",
+   "clinic": "Pasadena",
+   "therapist": "Aisha Grant",
+   "start": "2026-11-06T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-PAS-1106-1530",
+   "clinic": "Pasadena",
+   "therapist": "Aisha Grant",
+   "start": "2026-11-06T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-SPR-1104-0800",
+   "clinic": "Spring",
+   "therapist": "Sofia Mendez",
+   "start": "2026-11-04T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-SPR-1104-1100",
+   "clinic": "Spring",
+   "therapist": "Sofia Mendez",
+   "start": "2026-11-04T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-SPR-1104-1530",
+   "clinic": "Spring",
+   "therapist": "Sofia Mendez",
+   "start": "2026-11-04T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Wednesday",
+   "date": "2026-11-04",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-SPR-1105-0800",
+   "clinic": "Spring",
+   "therapist": "Sofia Mendez",
+   "start": "2026-11-05T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-SPR-1105-1100",
+   "clinic": "Spring",
+   "therapist": "Sofia Mendez",
+   "start": "2026-11-05T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-SPR-1105-1530",
+   "clinic": "Spring",
+   "therapist": "Sofia Mendez",
+   "start": "2026-11-05T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Thursday",
+   "date": "2026-11-05",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-SPR-1106-0800",
+   "clinic": "Spring",
+   "therapist": "Sofia Mendez",
+   "start": "2026-11-06T08:00:00-06:00",
+   "local_time": "08:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-SPR-1106-1100",
+   "clinic": "Spring",
+   "therapist": "Sofia Mendez",
+   "start": "2026-11-06T11:00:00-06:00",
+   "local_time": "11:00",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  },
+  {
+   "slot_id": "S-SPR-1106-1530",
+   "clinic": "Spring",
+   "therapist": "Sofia Mendez",
+   "start": "2026-11-06T15:30:00-06:00",
+   "local_time": "15:30",
+   "day": "Friday",
+   "date": "2026-11-06",
+   "patient_id": null
+  }
+ ],
+ "waitlist": [
+  {
+   "patient_id": "W201",
+   "first_name": "Carla",
+   "last_name": "Diaz",
+   "phone": "+17135550201",
+   "clinic": "Bellaire",
+   "insurance": "Lone Star Health PPO",
+   "requested_at": "2026-10-20T09:00:00-05:00",
+   "therapist_pref": "Daniel Price",
+   "availability": "mornings"
+  },
+  {
+   "patient_id": "W202",
+   "first_name": "Ben",
+   "last_name": "Ortiz",
+   "phone": "+17135550202",
+   "clinic": "Bellaire",
+   "insurance": "BayouCare HMO",
+   "referral_on_file": false,
+   "requested_at": "2026-10-18T09:00:00-05:00",
+   "therapist_pref": null,
+   "availability": "any"
+  },
+  {
+   "patient_id": "W203",
+   "first_name": "Dana",
+   "last_name": "Yates",
+   "phone": "+17135550203",
+   "clinic": "Bellaire",
+   "insurance": "Medicare",
+   "requested_at": "2026-10-22T14:00:00-05:00",
+   "therapist_pref": null,
+   "availability": "any"
+  },
+  {
+   "patient_id": "W204",
+   "first_name": "Evan",
+   "last_name": "Shah",
+   "phone": "+12815550204",
+   "clinic": "Katy",
+   "insurance": "Lone Star Health PPO",
+   "requested_at": "2026-10-15T10:00:00-05:00",
+   "therapist_pref": null,
+   "availability": "any"
+  },
+  {
+   "patient_id": "W205",
+   "first_name": "Fiona",
+   "last_name": "Grant",
+   "phone": "+17135550205",
+   "clinic": "Bellaire",
+   "insurance": "Workers' comp",
+   "claim_number": "WC-88123",
+   "requested_at": "2026-10-20T09:00:00-05:00",
+   "therapist_pref": null,
+   "availability": "any"
+  },
+  {
+   "patient_id": "W206",
+   "first_name": "Gus",
+   "last_name": "Hale",
+   "phone": "+17135550206",
+   "clinic": "Heights",
+   "insurance": "Gulf Coast Medicare Advantage",
+   "requested_at": "2026-10-25T08:00:00-05:00",
+   "therapist_pref": "Priya Nair",
+   "availability": "evenings"
+  },
+  {
+   "patient_id": "W207",
+   "first_name": "Hana",
+   "last_name": "Ito",
+   "phone": "+17135550207",
+   "clinic": "Heights",
+   "insurance": "Self-pay",
+   "requested_at": "2026-10-26T08:00:00-05:00",
+   "therapist_pref": null,
+   "availability": "mornings"
+  }
+ ]
+}

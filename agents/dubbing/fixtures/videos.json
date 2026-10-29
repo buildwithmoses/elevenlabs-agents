@@ -1,0 +1,39 @@
+{
+  "_note": "Fictional Riverbend Physical Therapy home exercise videos. Each line is one narrated segment and one title card. `facts` are the clinically critical facts a dub must keep: numbers (sets, reps, hold/rest seconds, times per day), the side of the body, and the safety line.",
+  "videos": [
+    {
+      "id": "bridges",
+      "title": "Glute Bridges",
+      "segments": [
+        { "say": "Glute bridges. Lie on your back with both knees bent and your feet flat on the floor.", "card": ["Glute Bridges", "Lie on your back, knees bent"] },
+        { "say": "Squeeze your glutes and lift your hips. Hold for 5 seconds.", "card": ["Lift your hips", "Hold 5 seconds"], "facts": [{ "kind": "hold_seconds", "value": 5 }] },
+        { "say": "Lower slowly. Do 10 reps.", "card": ["Lower slowly", "10 reps"], "facts": [{ "kind": "reps", "value": 10 }] },
+        { "say": "Rest, then repeat for 3 sets.", "card": ["3 sets"], "facts": [{ "kind": "sets", "value": 3 }] },
+        { "say": "Stop if you feel sharp pain in your back or hips.", "card": ["Stop if you feel sharp pain"], "facts": [{ "kind": "safety" }] }
+      ]
+    },
+    {
+      "id": "heel-slides",
+      "title": "Heel Slides, Left Knee",
+      "segments": [
+        { "say": "Heel slides. This exercise is for your left knee only.", "card": ["Heel Slides", "LEFT knee only"], "facts": [{ "kind": "side", "value": "left" }] },
+        { "say": "Lie on your back. Slowly slide your left heel toward you until you feel a gentle stretch. Hold for 3 seconds.", "card": ["Slide your left heel in", "Hold 3 seconds"], "facts": [{ "kind": "side", "value": "left" }, { "kind": "hold_seconds", "value": 3 }] },
+        { "say": "Slide it back out. Do 15 reps.", "card": ["15 reps"], "facts": [{ "kind": "reps", "value": 15 }] },
+        { "say": "Do 2 sets, twice a day.", "card": ["2 sets", "Twice a day"], "facts": [{ "kind": "sets", "value": 2 }, { "kind": "times_per_day", "value": 2 }] },
+        { "say": "Stop if you feel sharp pain in your knee.", "card": ["Stop if you feel sharp pain"], "facts": [{ "kind": "safety" }] }
+      ]
+    },
+    {
+      "id": "wall-pushups",
+      "title": "Wall Push-Ups",
+      "segments": [
+        { "say": "Wall push-ups. Stand about an arm's length from a wall.", "card": ["Wall Push-Ups", "Arm's length from a wall"] },
+        { "say": "Place your hands on the wall at shoulder height. Bend your elbows and bring your chest toward the wall, then push back.", "card": ["Hands at shoulder height", "Bend, then push back"] },
+        { "say": "Do 12 reps.", "card": ["12 reps"], "facts": [{ "kind": "reps", "value": 12 }] },
+        { "say": "Do 3 sets, and rest 30 seconds between sets.", "card": ["3 sets", "Rest 30 seconds"], "facts": [{ "kind": "sets", "value": 3 }, { "kind": "rest_seconds", "value": 30 }] },
+        { "say": "Stop if you feel sharp pain in your shoulder.", "card": ["Stop if you feel sharp pain"], "facts": [{ "kind": "safety" }] }
+      ]
+    }
+  ],
+  "languages": [ { "code": "es", "name": "Spanish" }, { "code": "vi", "name": "Vietnamese" } ]
+}

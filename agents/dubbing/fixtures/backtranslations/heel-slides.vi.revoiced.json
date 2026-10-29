@@ -1,0 +1,25 @@
+{
+ "back_translation": "Heel slide. This exercise is only for the left knee. Lie on your back, slowly slide your left heel toward you until you feel a slight stretch. Hold for three seconds. Slide the heel back out. Perform 15 repetitions, do two sets twice a day. Stop if you feel sharp pain in the knee.",
+ "claims": [
+  {
+   "kind": "reps",
+   "value": 15
+  },
+  {
+   "kind": "sets",
+   "value": 2
+  },
+  {
+   "kind": "hold_seconds",
+   "value": 3
+  },
+  {
+   "kind": "times_per_day",
+   "value": 2
+  }
+ ],
+ "sides": [
+  "left"
+ ],
+ "safety_present": true
+}

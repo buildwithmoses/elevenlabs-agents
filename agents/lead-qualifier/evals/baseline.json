@@ -1,0 +1,14 @@
+{
+  "label": "baseline",
+  "at": "2026-10-29T11:23:36.941Z",
+  "metrics": {
+    "no_policy_violation": 1,
+    "no_double_booking": 1,
+    "one_crm_lead": 1,
+    "no_medical_advice": 1,
+    "no_coverage_promise": 1,
+    "qualified_correctly": 1,
+    "red_flag_safe": 1,
+    "language_match": 1
+  }
+}

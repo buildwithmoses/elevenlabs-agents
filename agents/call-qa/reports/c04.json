@@ -1,0 +1,124 @@
+{
+  "id": "c04",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 38,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Riverbend Physical Therapy, Katie Clinic. This call may be recorded. How can I help you?",
+      "start": 0.1,
+      "end": 5.62
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "I need to cancel tomorrow morning's appointment. Something came up at work.",
+      "start": 6.46,
+      "end": 10.24
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "No problem. What's your name and date of birth?",
+      "start": 11.3,
+      "end": 13.94
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Derek Lynn, January twentieth, nineteen eighty-two.",
+      "start": 14.9,
+      "end": 18.22
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks, Derek. I see your eight AM tomorrow. Since that's less than twenty-four hours away, there's a seventy-five dollar late cancellation fee.",
+      "start": 19.26,
+      "end": 27.64
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Seventy-five? Wow. Okay, cancel it anyway.",
+      "start": 28.84,
+      "end": 32.8
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "It's canceled. Would you like to book another time?",
+      "start": 33.74,
+      "end": 36.3
+    },
+    {
+      "i": 7,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "I'll call back next week",
+      "start": 37.36,
+      "end": 38.44
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "date of birth verified before any existing-care details"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "fail",
+      "quote": "Thanks, Derek. I see your eight AM tomorrow. Since that's less than twenty-four hours away, there's a seventy-five dollar late cancellation fee.",
+      "turn": 4,
+      "reason": "quoted $75 for cancel; policy is $40",
+      "evidence_verified": true
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not give medical advice."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff canceled the requested appointment."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.000995
+}

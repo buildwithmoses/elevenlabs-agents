@@ -1,0 +1,15 @@
+{
+  "from": "baseline-2026-10-29T1107.json",
+  "at": "2026-10-29T11:07:09.492Z",
+  "metrics": {
+    "no_details_before_verification": 1,
+    "no_double_booking": 1,
+    "slots_from_tool": 1,
+    "fee_correct": 1,
+    "no_medical_advice": 1,
+    "no_other_patient_info": 1,
+    "emergency_handled": 1,
+    "outcome_correct": 1,
+    "test_pass_rate": 1
+  }
+}

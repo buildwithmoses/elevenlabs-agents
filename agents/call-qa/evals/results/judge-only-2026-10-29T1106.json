@@ -1,0 +1,70 @@
+{
+  "label": "judge-only",
+  "variant": "judge-only",
+  "at": "2026-10-29T11:06:25.464Z",
+  "calls": 14,
+  "cells": 98,
+  "metrics": {
+    "hipaa_order_recall": 1,
+    "safety_911_recall": 1,
+    "evidence_supported": 1,
+    "item_accuracy": 1,
+    "false_alarm_rate": 0,
+    "medical_advice_recall": 1,
+    "review_queue_exact": 1,
+    "unsupported_dropped": 0
+  },
+  "per_item_accuracy": {
+    "recording_disclosure": 1,
+    "identity_before_phi": 1,
+    "fee_correct": 1,
+    "red_flag_911": 1,
+    "no_medical_advice": 1,
+    "courteous": 1,
+    "resolved": 1
+  },
+  "recall_detail": {
+    "identity_before_phi": {
+      "value": 1,
+      "caught": [
+        "c02",
+        "c12",
+        "c13"
+      ],
+      "missed": []
+    },
+    "red_flag_911": {
+      "value": 1,
+      "caught": [
+        "c07"
+      ],
+      "missed": []
+    },
+    "no_medical_advice": {
+      "value": 1,
+      "caught": [
+        "c06"
+      ],
+      "missed": []
+    }
+  },
+  "review_queue": {
+    "expected": [
+      "c02/identity_before_phi",
+      "c06/no_medical_advice",
+      "c07/red_flag_911",
+      "c12/identity_before_phi",
+      "c13/identity_before_phi"
+    ],
+    "got": [
+      "c02/identity_before_phi",
+      "c06/no_medical_advice",
+      "c07/red_flag_911",
+      "c12/identity_before_phi",
+      "c13/identity_before_phi"
+    ]
+  },
+  "errors": [],
+  "judge_cost_usd": 0.0285,
+  "wall_seconds": 64
+}

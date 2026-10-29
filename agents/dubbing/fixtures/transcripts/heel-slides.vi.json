@@ -1,0 +1,305 @@
+{
+ "key": "heel-slides.vi",
+ "lang": "vi",
+ "model": "scribe_v1",
+ "language_code": "vie",
+ "language_probability": 1,
+ "text": "Trượt gót chân, bay tập 나의 chi đàn cho cháu gối trai. Năm nguôi, tu tu trượt gót chân trai với phiền mình cho gen khi thấy hối khăng. Giữa trong bà già, trượt gót chân trai lại, thu kiến phẫn rảnh lên. Tập hai hiếp, mối ngại hài lên, đùng lại nêu thấy cháu hối ô cháu gối.",
+ "words": [
+  {
+   "text": "Trượt",
+   "start": 0.18,
+   "end": 0.46
+  },
+  {
+   "text": "gót",
+   "start": 0.52,
+   "end": 0.7
+  },
+  {
+   "text": "chân,",
+   "start": 0.76,
+   "end": 1.12
+  },
+  {
+   "text": "bay",
+   "start": 1.42,
+   "end": 1.62
+  },
+  {
+   "text": "tập",
+   "start": 1.7,
+   "end": 1.86
+  },
+  {
+   "text": "나의",
+   "start": 1.96,
+   "end": 2.1
+  },
+  {
+   "text": "chi",
+   "start": 2.14,
+   "end": 2.28
+  },
+  {
+   "text": "đàn",
+   "start": 2.32,
+   "end": 2.5
+  },
+  {
+   "text": "cho",
+   "start": 2.58,
+   "end": 2.72
+  },
+  {
+   "text": "cháu",
+   "start": 2.82,
+   "end": 3
+  },
+  {
+   "text": "gối",
+   "start": 3.1,
+   "end": 3.26
+  },
+  {
+   "text": "trai.",
+   "start": 3.34,
+   "end": 3.68
+  },
+  {
+   "text": "Năm",
+   "start": 4.019,
+   "end": 4.18
+  },
+  {
+   "text": "nguôi,",
+   "start": 4.3,
+   "end": 4.62
+  },
+  {
+   "text": "tu",
+   "start": 4.86,
+   "end": 5
+  },
+  {
+   "text": "tu",
+   "start": 5.1,
+   "end": 5.24
+  },
+  {
+   "text": "trượt",
+   "start": 5.34,
+   "end": 5.62
+  },
+  {
+   "text": "gót",
+   "start": 5.66,
+   "end": 5.84
+  },
+  {
+   "text": "chân",
+   "start": 5.9,
+   "end": 6.12
+  },
+  {
+   "text": "trai",
+   "start": 6.18,
+   "end": 6.42
+  },
+  {
+   "text": "với",
+   "start": 6.48,
+   "end": 6.62
+  },
+  {
+   "text": "phiền",
+   "start": 6.64,
+   "end": 6.9
+  },
+  {
+   "text": "mình",
+   "start": 6.96,
+   "end": 7.14
+  },
+  {
+   "text": "cho",
+   "start": 7.22,
+   "end": 7.36
+  },
+  {
+   "text": "gen",
+   "start": 7.44,
+   "end": 7.68
+  },
+  {
+   "text": "khi",
+   "start": 7.76,
+   "end": 7.9
+  },
+  {
+   "text": "thấy",
+   "start": 7.96,
+   "end": 8.119
+  },
+  {
+   "text": "hối",
+   "start": 8.16,
+   "end": 8.3
+  },
+  {
+   "text": "khăng.",
+   "start": 8.38,
+   "end": 8.7
+  },
+  {
+   "text": "Giữa",
+   "start": 9.08,
+   "end": 9.28
+  },
+  {
+   "text": "trong",
+   "start": 9.32,
+   "end": 9.52
+  },
+  {
+   "text": "bà",
+   "start": 9.6,
+   "end": 9.68
+  },
+  {
+   "text": "già,",
+   "start": 9.74,
+   "end": 10.12
+  },
+  {
+   "text": "trượt",
+   "start": 10.52,
+   "end": 10.76
+  },
+  {
+   "text": "gót",
+   "start": 10.84,
+   "end": 11.02
+  },
+  {
+   "text": "chân",
+   "start": 11.08,
+   "end": 11.28
+  },
+  {
+   "text": "trai",
+   "start": 11.34,
+   "end": 11.48
+  },
+  {
+   "text": "lại,",
+   "start": 11.56,
+   "end": 11.82
+  },
+  {
+   "text": "thu",
+   "start": 12.12,
+   "end": 12.22
+  },
+  {
+   "text": "kiến",
+   "start": 12.3,
+   "end": 12.52
+  },
+  {
+   "text": "phẫn",
+   "start": 12.58,
+   "end": 12.72
+  },
+  {
+   "text": "rảnh",
+   "start": 12.78,
+   "end": 12.96
+  },
+  {
+   "text": "lên.",
+   "start": 13.02,
+   "end": 13.34
+  },
+  {
+   "text": "Tập",
+   "start": 13.72,
+   "end": 13.9
+  },
+  {
+   "text": "hai",
+   "start": 13.94,
+   "end": 14.06
+  },
+  {
+   "text": "hiếp,",
+   "start": 14.14,
+   "end": 14.4
+  },
+  {
+   "text": "mối",
+   "start": 14.62,
+   "end": 14.8
+  },
+  {
+   "text": "ngại",
+   "start": 14.88,
+   "end": 15.1
+  },
+  {
+   "text": "hài",
+   "start": 15.14,
+   "end": 15.3
+  },
+  {
+   "text": "lên,",
+   "start": 15.4,
+   "end": 15.68
+  },
+  {
+   "text": "đùng",
+   "start": 16.079,
+   "end": 16.239
+  },
+  {
+   "text": "lại",
+   "start": 16.3,
+   "end": 16.44
+  },
+  {
+   "text": "nêu",
+   "start": 16.52,
+   "end": 16.7
+  },
+  {
+   "text": "thấy",
+   "start": 16.76,
+   "end": 16.92
+  },
+  {
+   "text": "cháu",
+   "start": 17,
+   "end": 17.24
+  },
+  {
+   "text": "hối",
+   "start": 17.32,
+   "end": 17.54
+  },
+  {
+   "text": "ô",
+   "start": 17.66,
+   "end": 17.72
+  },
+  {
+   "text": "cháu",
+   "start": 17.8,
+   "end": 17.98
+  },
+  {
+   "text": "gối.",
+   "start": 18.08,
+   "end": 18.4
+  }
+ ]
+}

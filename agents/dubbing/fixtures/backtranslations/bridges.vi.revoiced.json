@@ -1,0 +1,19 @@
+{
+ "back_translation": "Buttock lift exercise. Lie on your back, bend both knees and place your feet flat on the floor. Tighten your buttock muscles, then lift your hips up, hold for five seconds. Lower down slowly. Perform ten times, rest, then repeat three sets. Stop if you feel sharp pain in your back or hips.",
+ "claims": [
+  {
+   "kind": "reps",
+   "value": 10
+  },
+  {
+   "kind": "hold_seconds",
+   "value": 5
+  },
+  {
+   "kind": "sets",
+   "value": 3
+  }
+ ],
+ "sides": [],
+ "safety_present": true
+}

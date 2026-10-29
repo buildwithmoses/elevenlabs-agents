@@ -1,0 +1,36 @@
+{
+  "id": "bridges",
+  "duration": 18.39,
+  "segments": [
+    {
+      "i": 0,
+      "start": 0,
+      "end": 5.34,
+      "say": "Glute bridges. Lie on your back with both knees bent and your feet flat on the floor."
+    },
+    {
+      "i": 1,
+      "start": 5.34,
+      "end": 9.29,
+      "say": "Squeeze your glutes and lift your hips. Hold for 5 seconds."
+    },
+    {
+      "i": 2,
+      "start": 9.29,
+      "end": 11.76,
+      "say": "Lower slowly. Do 10 reps."
+    },
+    {
+      "i": 3,
+      "start": 11.76,
+      "end": 14.55,
+      "say": "Rest, then repeat for 3 sets."
+    },
+    {
+      "i": 4,
+      "start": 14.55,
+      "end": 18.31,
+      "say": "Stop if you feel sharp pain in your back or hips."
+    }
+  ]
+}

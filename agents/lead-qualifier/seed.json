@@ -1,0 +1,19 @@
+{
+  "_doc": "Fictional seed data for the tools gateway. Phones are 555-01xx; nobody here is real.",
+  "referrals_on_file": [
+    { "member_id": "BC-55102", "plan": "bayoucare_hmo", "patient": "Rosa Delgado", "from": "Dr. Amir Patel (fictional PCP)" }
+  ],
+  "existing_leads": [
+    { "lead_id": "L-1001", "phone": "7135550144", "name": "Derek Liu", "status": "callback_requested", "concern": "shoulder pain", "source": "web_form", "created_at": "2026-10-20T15:02:00-05:00" }
+  ],
+  "therapists": {
+    "Heights": ["Jordan Avery", "Lucia Moreno (habla español)"],
+    "Bellaire": ["Sam Whitaker", "Linh Tran (nói tiếng Việt)"],
+    "Pasadena": ["Carmen Ruiz (habla español)", "Mike Odom"],
+    "Katy": ["Priya Nair", "Ben Castillo (habla español)"],
+    "Alief": ["Linh Tran (nói tiếng Việt)", "Grace Kim"],
+    "Spring": ["Tom Becker", "Ana Flores (habla español)"]
+  },
+  "slot_times": ["08:00", "10:00", "13:00", "16:00", "17:30"],
+  "booked_pattern": [1, 3]
+}

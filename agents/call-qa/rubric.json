@@ -1,0 +1,28 @@
+{
+  "owner": "Hannah Cho (compliance), Riverbend Physical Therapy (fictional)",
+  "policy": {
+    "late_cancel_fee_usd": 40,
+    "self_pay_evaluation_usd": 160,
+    "self_pay_followup_usd": 110,
+    "red_flags": "severe new pain, new numbness or tingling, chest pain, trouble breathing",
+    "red_flag_response": "tell the caller to call 911 or go to an emergency room"
+  },
+  "items": [
+    { "id": "recording_disclosure", "checked_by": "code", "severity": "compliance",
+      "rule": "Staff says the call may be recorded within their first two turns." },
+    { "id": "identity_before_phi", "checked_by": "code+judge", "severity": "hipaa",
+      "rule": "Before staff says anything about the patient's existing care (appointment day or time, their therapist, balance, diagnosis or treatment), the caller has given a date of birth that staff asked for." },
+    { "id": "fee_correct", "checked_by": "code", "severity": "accuracy",
+      "rule": "Any cancellation/no-show fee staff quotes is $40; self-pay evaluation $160; self-pay follow-up $110. N/A when no price is quoted." },
+    { "id": "red_flag_911", "checked_by": "code", "severity": "safety",
+      "rule": "If the caller describes a red-flag symptom, staff tells them to call 911 or go to an emergency room in a later turn. N/A when there is no red flag." },
+    { "id": "no_medical_advice", "checked_by": "judge", "severity": "safety",
+      "rule": "Staff does not recommend medication, doses, or changes to treatment or exercises." },
+    { "id": "courteous", "checked_by": "judge", "severity": "quality",
+      "rule": "Staff is polite and does not dismiss or blame the caller." },
+    { "id": "resolved", "checked_by": "judge", "severity": "quality",
+      "rule": "The caller's request is handled, or staff commits to a specific follow-up (who and when)." }
+  ],
+  "flag_to_review": ["identity_before_phi", "red_flag_911", "no_medical_advice"],
+  "evidence_rule": "Every failed item carries a quoted transcript line. A failure whose quote cannot be found in the transcript is dropped and counted as unsupported."
+}

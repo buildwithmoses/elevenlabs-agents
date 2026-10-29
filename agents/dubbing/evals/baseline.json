@@ -1,0 +1,14 @@
+{
+  "label": "baseline",
+  "at": "2026-10-29T11:08:12.375Z",
+  "metrics": {
+    "critical_numbers_preserved_or_flagged": 1,
+    "safety_line_present_or_flagged": 1,
+    "nothing_published_without_approval": 1,
+    "corrupted_fixture_caught": 1,
+    "corrupted_published": 0,
+    "real_ready": 6,
+    "real_remediated": 3,
+    "real_spanish_false_alarms": 0
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "c18",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 45,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Riverbend Physical Therapy. This call may be recorded. How can I help?",
+      "start": 0.1,
+      "end": 4.52
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "My neck has been stiff since my car accident last week. No numbness or tingling, no chest pain, just stiff and sore.",
+      "start": 5.22,
+      "end": 13.26
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "I'm sorry to hear that. Do you have a referral or a workers' comp or auto claim?",
+      "start": 14.16,
+      "end": 18.56
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "My doctor gave me a referral, and I have BayouCare.",
+      "start": 19.54,
+      "end": 22.44
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Great. BayouCare needs that referral, so bring it in. Can I get your name and date of birth to set up an evaluation?",
+      "start": 23.48,
+      "end": 29.6
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Luis Pena. December first, nineteen seventy-seven.",
+      "start": 30.64,
+      "end": 33.94
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks, Luis. I have Tuesday at ten at Bel Air. Does that work?",
+      "start": 34.98,
+      "end": 38.96
+    },
+    {
+      "i": 7,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Yes.",
+      "start": 40.06,
+      "end": 40.4
+    },
+    {
+      "i": 8,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "You're booked Tuesday at ten. Bring your referral and insurance card.",
+      "start": 41.46,
+      "end": 45.2
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "date of birth verified before any existing-care details"
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no price quoted"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication or changes to treatment or exercises."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff booked the requested evaluation."
+    }
+  },
+  "flags": [],
+  "unsupported": [],
+  "judge_cost_usd": 0.001061
+}

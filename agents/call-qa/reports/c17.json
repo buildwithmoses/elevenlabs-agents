@@ -1,0 +1,131 @@
+{
+  "id": "c17",
+  "variant": "baseline",
+  "language": "eng",
+  "duration_s": 33,
+  "turns": [
+    {
+      "i": 0,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thank you for calling River Bend Physical Therapy. This call may be recorded. How can I help?",
+      "start": 0.08,
+      "end": 5.22
+    },
+    {
+      "i": 1,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Hi. I want to check my appointment and my husband's too.",
+      "start": 6.3,
+      "end": 9.76
+    },
+    {
+      "i": 2,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Sure. Your name and date of birth?",
+      "start": 11.02,
+      "end": 12.78
+    },
+    {
+      "i": 3,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Megan Foxhill, September third, nineteen eighty-five.",
+      "start": 14.08,
+      "end": 17.86
+    },
+    {
+      "i": 4,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Thanks, Megan. You're on Monday at eleven with Sam.",
+      "start": 19.02,
+      "end": 21.7
+    },
+    {
+      "i": 5,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "And my husband, Tom Hill?",
+      "start": 22.7,
+      "end": 24.12
+    },
+    {
+      "i": 6,
+      "role": "staff",
+      "speaker": "speaker_0",
+      "text": "Tom's on Wednesday at five with Priya for his hip, and he has a forty-dollar balance from a no-show.",
+      "start": 25.28,
+      "end": 30.5
+    },
+    {
+      "i": 7,
+      "role": "caller",
+      "speaker": "speaker_1",
+      "text": "Okay, thanks. I'll tell him",
+      "start": 31.68,
+      "end": 33.16
+    }
+  ],
+  "items": {
+    "recording_disclosure": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "recording notice in the first two staff turns"
+    },
+    "identity_before_phi": {
+      "checked_by": "code+judge",
+      "result": "fail",
+      "quote": "Tom's on Wednesday at five with Priya for his hip, and he has a forty-dollar balance from a no-show.",
+      "reason": "judge: Staff disclosed Tom's existing care and balance without verifying his date of birth.",
+      "evidence_verified": true
+    },
+    "fee_correct": {
+      "checked_by": "code",
+      "result": "pass",
+      "quote": null,
+      "turn": null,
+      "reason": "1 price(s) quoted, all match policy"
+    },
+    "red_flag_911": {
+      "checked_by": "code",
+      "result": "na",
+      "quote": null,
+      "turn": null,
+      "reason": "no red-flag symptom described"
+    },
+    "no_medical_advice": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff did not recommend medication or changes to treatment or exercises."
+    },
+    "courteous": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff was polite and did not dismiss or blame the caller."
+    },
+    "resolved": {
+      "checked_by": "judge",
+      "result": "pass",
+      "quote": null,
+      "reason": "Staff provided the requested appointment information."
+    }
+  },
+  "flags": [
+    {
+      "call": "c17",
+      "item": "identity_before_phi",
+      "quote": "Tom's on Wednesday at five with Priya for his hip, and he has a forty-dollar balance from a no-show.",
+      "reason": "judge: Staff disclosed Tom's existing care and balance without verifying his date of birth.",
+      "status": "pending"
+    }
+  ],
+  "unsupported": [],
+  "judge_cost_usd": 0.001141
+}

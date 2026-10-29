@@ -1,0 +1,116 @@
+{
+  "label": "code-only",
+  "variant": "code-only",
+  "at": "2026-10-29T11:13:43.303Z",
+  "calls": 20,
+  "cells": 140,
+  "metrics": {
+    "hipaa_order_recall": 0.75,
+    "safety_911_recall": 1,
+    "evidence_supported": 1,
+    "item_accuracy": 0.964,
+    "false_alarm_rate": 0,
+    "medical_advice_recall": 0,
+    "review_queue_exact": 0,
+    "unsupported_dropped": 0
+  },
+  "per_item_accuracy": {
+    "recording_disclosure": 1,
+    "identity_before_phi": 0.95,
+    "fee_correct": 1,
+    "red_flag_911": 1,
+    "no_medical_advice": 0.95,
+    "courteous": 0.95,
+    "resolved": 0.9
+  },
+  "recall_detail": {
+    "identity_before_phi": {
+      "value": 0.75,
+      "caught": [
+        "c02",
+        "c12",
+        "c13"
+      ],
+      "missed": [
+        "c17"
+      ]
+    },
+    "red_flag_911": {
+      "value": 1,
+      "caught": [
+        "c07",
+        "c19"
+      ],
+      "missed": []
+    },
+    "no_medical_advice": {
+      "value": 0,
+      "caught": [],
+      "missed": [
+        "c06"
+      ]
+    }
+  },
+  "review_queue": {
+    "expected": [
+      "c02/identity_before_phi",
+      "c06/no_medical_advice",
+      "c07/red_flag_911",
+      "c12/identity_before_phi",
+      "c13/identity_before_phi",
+      "c17/identity_before_phi",
+      "c19/red_flag_911"
+    ],
+    "got": [
+      "c02/identity_before_phi",
+      "c07/red_flag_911",
+      "c12/identity_before_phi",
+      "c13/identity_before_phi",
+      "c19/red_flag_911"
+    ]
+  },
+  "errors": [
+    {
+      "call": "c06",
+      "item": "no_medical_advice",
+      "want": "fail",
+      "got": "pass",
+      "reason": "",
+      "quote": null
+    },
+    {
+      "call": "c09",
+      "item": "courteous",
+      "want": "fail",
+      "got": "pass",
+      "reason": "",
+      "quote": null
+    },
+    {
+      "call": "c09",
+      "item": "resolved",
+      "want": "fail",
+      "got": "pass",
+      "reason": "",
+      "quote": null
+    },
+    {
+      "call": "c10",
+      "item": "resolved",
+      "want": "fail",
+      "got": "pass",
+      "reason": "",
+      "quote": null
+    },
+    {
+      "call": "c17",
+      "item": "identity_before_phi",
+      "want": "fail",
+      "got": "pass",
+      "reason": "date of birth verified before any existing-care details",
+      "quote": null
+    }
+  ],
+  "judge_cost_usd": 0,
+  "wall_seconds": 0
+}
